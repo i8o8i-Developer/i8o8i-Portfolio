@@ -142,7 +142,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <!-- Header -->
         <tr>
             <td style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); color: #ffffff; padding: 60px 30px; text-align: center;">
-                <div style="font-size: 56px; margin-bottom: 20px;">✓</div>
                 <h2 style="margin: 10px 0; font-size: 32px; font-weight: 900; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Message Received!</h2>
             </td>
         </tr>

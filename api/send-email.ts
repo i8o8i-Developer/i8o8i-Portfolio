@@ -56,12 +56,32 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Responsive email styles */
+        body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin:0; padding: 20px 12px; }
+        .email-container { max-width: 600px; margin: 0 auto; width: 100%; }
+        .header-td { padding: 28px 20px !important; text-align: center; }
+        .content { padding: 20px 16px !important; }
+        .footer-td { padding: 16px 12px !important; text-align: center; }
+        .btn { padding: 12px 20px !important; display: inline-block; }
+        .message { word-break: break-word; white-space: normal; }
+        /* Make elements use border-box and constrain images */
+        .email-container, .content, .header-td, .footer-td, .message { box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        @media only screen and (max-width:480px) {
+            h1 { font-size: 20px !important; line-height: 1.2 !important; }
+            .header-td { padding: 20px 12px !important; }
+            .content { padding: 16px 12px !important; }
+            .footer-td { padding: 12px !important; }
+            .btn { padding: 12px 18px !important; }
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 40px 20px; font-family: 'Iceberg', sans-serif; line-height: 1.6; color: #e5e7eb; background: #000000;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
+<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', sans-serif; line-height: 1.6; color: #e5e7eb; background: #000000;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="email-container" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
-            <td style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 40px 30px; text-align: center;">
+            <td class="header-td" style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 40px 30px; text-align: center;">
                 <h1 style="margin: 0; font-size: 24px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">New Contact Message</h1>
                 <p style="margin: 12px 0 0 0; font-size: 13px; color: #6b7280; font-family: 'Iceberg', sans-serif; letter-spacing: 1px;">Portfolio Contact System</p>
             </td>
@@ -69,7 +89,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         
         <!-- Content -->
         <tr>
-            <td style="padding: 40px 30px; background: #0a0a0a;">
+            <td class="content" style="padding: 40px 30px; background: #0a0a0a;">
                 <!-- Name -->
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 24px;">
                     <tr>
@@ -79,7 +99,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                     </tr>
                     <tr>
                         <td style="background: #000000; padding: 18px; border-left: 4px solid #10b981; border: 1px solid #1f2937;">
-                            <div style="color: #f9fafb; font-size: 16px; font-family: 'Iceberg', sans-serif;">${sanitizedName}</div>
+                            <div class="message" style="color: #f9fafb; font-size: 16px; font-family: 'Iceberg', sans-serif;">${sanitizedName}</div>
                         </td>
                     </tr>
                 </table>
@@ -107,7 +127,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                     </tr>
                     <tr>
                         <td style="background: #000000; padding: 20px; border-left: 4px solid #3b82f6; border: 1px solid #1e3a8a;">
-                            <div style="color: #93c5fd; font-size: 15px; line-height: 1.8; font-family: 'Iceberg', sans-serif;">${sanitizedMessage.replace(/\n/g, '<br>')}</div>
+                            <div class="message" style="color: #93c5fd; font-size: 15px; line-height: 1.8; font-family: 'Iceberg', sans-serif;">${sanitizedMessage.replace(/\n/g, '<br>')}</div>
                         </td>
                     </tr>
                 </table>
@@ -116,7 +136,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 32px;">
                     <tr>
                         <td style="text-align: center;">
-                            <a href="mailto:${sanitizedEmail}" style="display: inline-block; padding: 14px 36px; background: #10b981; color: #000000; text-decoration: none; font-weight: 700; font-size: 14px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px; border: 2px solid #10b981; transition: all 0.3s;">Reply to ${sanitizedName}</a>
+                            <a href="mailto:${sanitizedEmail}" class="btn" style="display: inline-block; padding: 14px 36px; background: #10b981; color: #000000; text-decoration: none; font-weight: 700; font-size: 14px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px; border: 2px solid #10b981; transition: all 0.3s;">Reply to ${sanitizedName}</a>
                         </td>
                     </tr>
                 </table>
@@ -125,7 +145,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         
         <!-- Footer -->
         <tr>
-            <td style="background: #000000; padding: 24px 30px; text-align: center; border-top: 2px solid #1f2937;">
+            <td class="footer-td" style="background: #000000; padding: 24px 30px; text-align: center; border-top: 2px solid #1f2937;">
                 <div style="color: #10b981; font-weight: 600; font-size: 12px; margin-bottom: 8px; font-family: 'Silkscreen', sans-serif;">${new Date().toLocaleString('en-US', { 
                   year: 'numeric', 
                   month: 'long', 
@@ -151,12 +171,32 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Responsive email styles */
+        body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin:0; padding: 20px 12px; }
+        .email-container { max-width: 600px; margin: 0 auto; width: 100%; }
+        .header-td { padding: 28px 20px !important; text-align: center; }
+        .content { padding: 20px 16px !important; }
+        .footer-td { padding: 16px 12px !important; text-align: center; }
+        .btn { padding: 12px 20px !important; display: inline-block; }
+        .message { word-break: break-word; white-space: normal; }
+        /* Make elements use border-box and constrain images */
+        .email-container, .content, .header-td, .footer-td, .message { box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        @media only screen and (max-width:480px) {
+            h1 { font-size: 20px !important; line-height: 1.2 !important; }
+            .header-td { padding: 20px 12px !important; }
+            .content { padding: 16px 12px !important; }
+            .footer-td { padding: 12px !important; }
+            .btn { padding: 12px 18px !important; }
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 40px 20px; font-family: 'Iceberg', sans-serif; line-height: 1.7; color: #e5e7eb; background: #000000;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
+<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', sans-serif; line-height: 1.7; color: #e5e7eb; background: #000000;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="email-container" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
-            <td style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 50px 30px; text-align: center;">
+            <td class="header-td" style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 50px 30px; text-align: center;">
                 <h1 style="margin: 0; font-size: 32px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Message Received!</h1>
                 <p style="margin: 12px 0 0 0; font-size: 14px; color: #6b7280; font-family: 'Iceberg', sans-serif;">Thank You For Reaching Out</p>
             </td>
@@ -164,7 +204,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         
         <!-- Content -->
         <tr>
-            <td style="padding: 40px 30px; background: #0a0a0a;">
+            <td class="content" style="padding: 40px 30px; background: #0a0a0a;">
                 <!-- Greeting -->
                 <p style="font-size: 16px; margin: 0 0 20px 0; color: #e5e7eb; font-family: 'Iceberg', sans-serif;">
                     Hi <strong style="color: #10b981; font-family: 'Silkscreen', sans-serif;">${sanitizedName}</strong>,
@@ -186,7 +226,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                     </tr>
                     <tr>
                         <td style="background: #000000; padding: 20px; border-left: 4px solid #3b82f6; border: 1px solid #1e3a8a;">
-                            <div style="color: #93c5fd; font-size: 14px; line-height: 1.8; font-style: italic; font-family: 'Iceberg', sans-serif;">${sanitizedMessage.replace(/\n/g, '<br>')}</div>
+                            <div class="message" style="color: #93c5fd; font-size: 14px; line-height: 1.8; font-style: italic; font-family: 'Iceberg', sans-serif;">${sanitizedMessage.replace(/\n/g, '<br>')}</div>
                         </td>
                     </tr>
                 </table>
@@ -223,8 +263,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 25px;">
                     <tr>
                         <td style="text-align: center;">
-                            <a href="https://linkedin.com/in/anubhav16o8" style="display: inline-block; margin: 0 6px; padding: 10px 20px; background: #000000; border: 2px solid #10b981; color: #10b981; text-decoration: none; font-size: 12px; font-weight: 700; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">LinkedIn</a>
-                            <a href="https://github.com/i8o8i-Developer" style="display: inline-block; margin: 0 6px; padding: 10px 20px; background: #000000; border: 2px solid #10b981; color: #10b981; text-decoration: none; font-size: 12px; font-weight: 700; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">GitHub</a>
+                            <a href="https://linkedin.com/in/anubhav16o8" class="btn" style="display: inline-block; margin: 0 6px; padding: 10px 20px; background: #000000; border: 2px solid #10b981; color: #10b981; text-decoration: none; font-size: 12px; font-weight: 700; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">LinkedIn</a>
+                            <a href="https://github.com/i8o8i-Developer" class="btn" style="display: inline-block; margin: 0 6px; padding: 10px 20px; background: #000000; border: 2px solid #10b981; color: #10b981; text-decoration: none; font-size: 12px; font-weight: 700; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">GitHub</a>
                         </td>
                     </tr>
                 </table>
@@ -233,7 +273,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         
         <!-- Footer -->
         <tr>
-            <td style="background: #000000; padding: 30px 20px; text-align: center; border-top: 2px solid #1f2937;">
+            <td class="footer-td" style="background: #000000; padding: 30px 20px; text-align: center; border-top: 2px solid #1f2937;">
                 <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">This Is An Automated Confirmation From The Portfolio Contact System.</div>
                 <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">Your Message Has Been Securely Received And Logged.</div>
                 <div style="color: #ef4444; font-weight: 600; margin-top: 12px; font-size: 11px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Please Do Not Reply To This Email</div>

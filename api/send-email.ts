@@ -156,14 +156,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
-<<<<<<< HEAD
             <td style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 50px 30px; text-align: center;">
                 <h1 style="margin: 0; font-size: 32px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Message Received!</h1>
-                <p style="margin: 12px 0 0 0; font-size: 14px; color: #6b7280; font-family: 'Iceberg', sans-serif;">Thank you for reaching out</p>
-=======
-            <td style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); color: #ffffff; padding: 60px 30px; text-align: center;">
-                <h2 style="margin: 10px 0; font-size: 32px; font-weight: 900; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Message Received!</h2>
->>>>>>> ab1c5dca4277c5b8e3889a428472917e8bdd3679
+                <p style="margin: 12px 0 0 0; font-size: 14px; color: #6b7280; font-family: 'Iceberg', sans-serif;">Thank You For Reaching Out</p>
             </td>
         </tr>
         
@@ -176,7 +171,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 </p>
                 
                 <p style="font-size: 15px; margin: 0 0 25px 0; color: #9ca3af; line-height: 1.8; font-family: 'Iceberg', sans-serif;">
-                    Thank you for reaching out! I've successfully received your message and will get back to you as soon as possible.
+                    I've Successfully Received Your Message And Will Get Back To You As Soon As Possible.
                 </p>
                 
                 <!-- Divider -->
@@ -207,7 +202,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 </table>
                 
                 <p style="font-size: 14px; margin: 25px 0; color: #6b7280; line-height: 1.7; font-family: 'Iceberg', sans-serif;">
-                    If you need immediate assistance, feel free to connect with me on other platforms.
+                    If You Need Immediate Assistance, Feel Free To Connect With Me On Other Platforms.
                 </p>
                 
                 <!-- Divider -->
@@ -217,7 +212,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                         <td>
-                            <p style="color: #6b7280; margin: 0 0 8px 0; font-size: 14px; font-family: 'Iceberg', sans-serif;">Best regards,</p>
+                            <p style="color: #6b7280; margin: 0 0 8px 0; font-size: 14px; font-family: 'Iceberg', sans-serif;">Best Regards,</p>
                             <div style="font-size: 20px; color: #10b981; font-weight: 700; margin: 8px 0; font-family: 'Silkscreen', sans-serif; letter-spacing: 1px;">Anubhav Chaurasia</div>
                             <div style="color: #6b7280; font-size: 13px; font-family: 'Iceberg', sans-serif;">Backend Developer</div>
                         </td>
@@ -239,9 +234,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <!-- Footer -->
         <tr>
             <td style="background: #000000; padding: 30px 20px; text-align: center; border-top: 2px solid #1f2937;">
-                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">This is an automated confirmation from the Portfolio Contact System.</div>
-                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">Your message has been securely received and logged.</div>
-                <div style="color: #ef4444; font-weight: 600; margin-top: 12px; font-size: 11px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Please do not reply to this email</div>
+                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">This Is An Automated Confirmation From The Portfolio Contact System.</div>
+                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">Your Message Has Been Securely Received And Logged.</div>
+                <div style="color: #ef4444; font-weight: 600; margin-top: 12px; font-size: 11px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Please Do Not Reply To This Email</div>
             </td>
         </tr>
     </table>

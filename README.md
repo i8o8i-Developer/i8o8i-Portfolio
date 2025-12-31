@@ -10,7 +10,7 @@
 <div align="center">
 
 ![Portfolio Banner](https://img.shields.io/badge/Portfolio-i8o8i-10B981?style=for-the-badge&logo=react&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.5.8-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)

@@ -156,9 +156,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
+<<<<<<< HEAD
             <td style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 50px 30px; text-align: center;">
                 <h1 style="margin: 0; font-size: 32px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Message Received!</h1>
                 <p style="margin: 12px 0 0 0; font-size: 14px; color: #6b7280; font-family: 'Iceberg', sans-serif;">Thank you for reaching out</p>
+=======
+            <td style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); color: #ffffff; padding: 60px 30px; text-align: center;">
+                <h2 style="margin: 10px 0; font-size: 32px; font-weight: 900; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Message Received!</h2>
+>>>>>>> ab1c5dca4277c5b8e3889a428472917e8bdd3679
             </td>
         </tr>
         

@@ -59,7 +59,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         {/* Terminal Body */}
         <div className="bg-secondary/40 border border-border/50 rounded-b-lg p-3 sm:p-6 font-mono text-xs sm:text-sm min-h-[200px] sm:min-h-[300px]">
           {/* ASCII Art Logo */}
-          <pre className="text-primary text-[8px] sm:text-xs mb-4 sm:mb-6 leading-tight overflow-x-auto">
+          <pre className="ascii-art text-primary text-[8px] sm:text-xs mb-4 sm:mb-6 leading-tight overflow-x-auto" style={{ fontFamily: 'monospace' }}>
 {`  _     ____              ____     _   
  (_)  .' __ '.          .' __ '.  (_)  
  __   | (__) |   .--.   | (__) |  __   

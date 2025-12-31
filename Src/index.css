@@ -1,10 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Silkscreen:wght@400;700&family=Mystery+Quest&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Developer Portfolio Design System - Dark Theme With Cyan/Green Accents */
+
+/* Silkscreen For Headings, UI Elements, And Strong Text */
+/* Iceberg for body text and descriptions */
+
+* {
+  font-family: "Silkscreen", sans-serif !important;
+}
+
+/* Use Iceberg For Body Text And Paragraphs */
+p, .body-text {
+  font-family: "Iceberg", sans-serif !important;
+}
+
+/* Keep Silkscreen For Headings And UI - But NOT h1, h2 (Hero Uses Custom Font) */
+h3, h4, h5, h6, button, .heading, .ui-text {
+  font-family: "Silkscreen", sans-serif !important;
+}
+
+/* Utility Classes Or Manual Font Control */
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.iceberg-regular {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mystery Quest For Futuristic Hero Text */
+.mystery-quest-regular {
+  font-family: "Mystery Quest", system-ui !important;
+  font-weight: 400 !important;
+  font-style: normal;
+}
+
+/* ASCII Art Monospace Override */
+.ascii-art {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* High Specificity Override For Hero Section */
+.hero-mystery-quest,
+.hero-mystery-quest *,
+.hero-mystery-quest span {
+  font-family: "Mystery Quest", system-ui !important;
+}
 
 @layer base {
   :root {

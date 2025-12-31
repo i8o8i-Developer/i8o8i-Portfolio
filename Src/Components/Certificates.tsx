@@ -105,7 +105,7 @@ const Certificates = () => {
             {certificates.map((cert, index) => (
               <div
                 key={cert.id}
-                className="p-4 sm:p-6 2xl:p-8 rounded-lg group border-2 border-border bg-card hover:border-primary transition-colors"
+                className="p-4 sm:p-6 2xl:p-8 rounded-lg group border-2 border-border bg-card hover:border-primary transition-colors min-h-[200px] sm:min-h-[220px] flex flex-col"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Icon */}
@@ -126,23 +126,28 @@ const Certificates = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-sm sm:text-lg 2xl:text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-1 sm:mb-2">
-                  {cert.title}
-                </h3>
-                <p className="text-muted-foreground text-xs sm:text-sm 2xl:text-base mb-3 sm:mb-4">
-                  {cert.issuer}
-                </p>
+                <div className="flex-grow">
+                  <h3 className="text-sm sm:text-lg 2xl:text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-1 sm:mb-2">
+                    {cert.title}
+                  </h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm 2xl:text-base mb-3 sm:mb-4">
+                    {cert.issuer}
+                  </p>
+                </div>
 
                 {/* Meta */}
-                <div className="flex items-center justify-between text-[10px] sm:text-xs 2xl:text-sm font-mono">
+                <div className="flex flex-col gap-2 text-[10px] sm:text-xs 2xl:text-sm font-mono">
                   <div className="flex items-center gap-1 text-muted-foreground">
                     <Calendar className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                     <span>{cert.date}</span>
                   </div>
                   {cert.credentialId && (
-                    <span className="text-primary/70 truncate ml-2">
-                      {cert.credentialId}
-                    </span>
+                    <div className="flex items-start gap-1">
+                      <span className="text-primary/50 shrink-0">ID:</span>
+                      <span className="text-primary/90 break-all leading-tight">
+                        {cert.credentialId}
+                      </span>
+                    </div>
                   )}
                 </div>
               </div>

@@ -68,9 +68,12 @@ const About = () => {
                 <div className="relative group">
                   <div className="relative z-10">
                     <div className="aspect-square rounded-lg overflow-hidden border-2 border-border bg-card">
-                      <div className="w-full h-full bg-card flex items-center justify-center relative">
-                        <span className="text-7xl font-bold text-primary/40 group-hover:text-primary/60 transition-all duration-300">AC</span>
-                      </div>
+                      <img 
+                        src="/Images/My-Image.png" 
+                        alt="Anubhav Chaurasia - Backend Developer" 
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                   {/* Border Effect */}

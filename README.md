@@ -10,11 +10,12 @@
 <div align="center">
 
 ![Portfolio Banner](https://img.shields.io/badge/Portfolio-i8o8i-10B981?style=for-the-badge&logo=react&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Nodemailer](https://img.shields.io/badge/Nodemailer-7.0.12-339933?style=for-the-badge&logo=nodemailer&logoColor=white)
 
 **A Modern, Responsive Portfolio Showcasing Full-Stack Development, AI/ML Projects, And Cybersecurity Expertise**
 
@@ -33,7 +34,10 @@
   - [Installation](#installation)
   - [Development](#development)
   - [Build](#build)
+  - [Email Template Preview](#email-template-preview)
 - [Performance Optimizations](#performance-optimizations)
+- [Email System](#email-system)
+- [Deployment](#deployment)
 - [Responsive Design](#responsive-design)
 - [Projects Showcase](#projects-showcase)
 - [Contact](#contact)
@@ -86,7 +90,7 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 5. **Skills**: 9 Categories With 40+ Technologies And Proficiency Levels
 6. **Certifications**: 9 Industry Certifications From Google, Anthropic, Forage
 7. **Testimonials**: Client Feedback Carousel
-8. **Contact**: Multi-Channel Contact Form With Supabase Integration
+8. **Contact**: Professional Email System With Dual Templates (Admin + User Confirmation)
 
 ---
 
@@ -97,12 +101,19 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 - **TypeScript 5.6** - Type-Safe Development
 - **Vite 7.3.0** - Next-Generation Frontend Tooling
 - **Tailwind CSS** - Utility-First CSS Framework
+- **React Router DOM 6.30.1** - Client-Side Routing
+- **Nodemailer 7.0.12** - Email Sending Library
+- **date-fns 3.6.0** - Modern Date Utility Library
 
 ### UI Components
 - **Radix UI** - Accessible Component Primitives
   - Accordion, Alert Dialog, Collapsible, Dialog, Dropdown Menu
   - Navigation Menu, Popover, Scroll Area, Select, Tabs, Toast, Tooltip
-- **Lucide React** - Modern Icon Library
+  - Context Menu, Hover Card, Menubar, Progress, Radio Group, Slider, Switch
+- **Embla Carousel** - Smooth Carousel Component
+- **Recharts** - Chart Library For Data Visualization
+- **Sonner** - Toast Notifications
+- **Lucide React** - Modern Icon Library (460+ Icons)
 - **Class Variance Authority** - Component Variant Management
 - **clsx + tailwind-merge** - Conditional Class Utilities
 
@@ -117,13 +128,17 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 - **@hookform/resolvers** - Validation Integration
 
 ### Backend Integration
-- **Supabase** - Backend-As-A-Service (Database, Auth, Storage)
+- **Nodemailer** - Professional Email Sending With SMTP Support
+- **@vercel/node** - Vercel Serverless Functions Support
 - **@tanstack/react-query** - Server State Management
 
 ### Development Tools
 - **ESLint** - Code Linting
 - **PostCSS + Autoprefixer** - CSS Processing
 - **TypeScript ESLint** - TypeScript Linting
+- **@vitejs/plugin-react-swc** - Fast Refresh With SWC
+- **Lovable Tagger** - Component Development Tool
+- **@tailwindcss/typography** - Typography Plugin For Prose Content
 
 ---
 
@@ -131,9 +146,10 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 
 ```
 i8o8i-Portfolio/
+├── api/                         # Vercel Serverless Functions
+│   └── send-email.ts            # Email API Endpoint (Nodemailer)
 ├── Public/                      # Static Assets
-│   ├── .Env-Loader.php          # Environment Variables Loader
-│   └── Send-Email.php           # Email Sending Script
+│   └── Email-Preview.html       # Email Templates Preview
 ├── Src/
 │   ├── Assets/                  # Images, Fonts, And Media Files
 │   ├── Components/              # React Components
@@ -169,23 +185,22 @@ i8o8i-Portfolio/
 │   ├── App.tsx                  # Main App Component
 │   ├── Main.tsx                 # React Entry Point
 │   └── index.css                # Global Styles
-├── .env                         # Environment Variables (Not Tracked)
-├── .env.example                 # Environment Variables Template
+├── .env                         # Environment Variables (Not Tracked - Copy From .env.example)
+├── .env.example                 # Environment Variables Template (SMTP Configuration)
 ├── .gitignore                   # Git Ignore Rules
 ├── bun.lockb                    # Bun Lock File
 ├── Components.json              # Shadcn UI Configuration
 ├── eslint.config.js             # ESLint Configuration
 ├── index.html                   # HTML Template
 ├── LICENSE                      # MIT License
-├── package-lock.json            # NPM Lock File
-├── package.json                 # Dependencies
+├── package.json                 # Dependencies And Scripts
 ├── postcss.config.js            # PostCSS Configuration
 ├── README.md                    # This File
-├── tailwind.config.ts           # Tailwind Configuration
+├── tailwind.config.ts           # Tailwind Configuration With Custom Theme
 ├── tsconfig.app.json            # TypeScript App Configuration
-├── tsconfig.json                # TypeScript Configuration
+├── tsconfig.json                # TypeScript Base Configuration
 ├── tsconfig.node.json           # TypeScript Node Configuration
-└── vite.config.ts               # Vite Configuration
+└── vite.config.ts               # Vite Configuration (Port 8080, Aliases)
 ```
 
 ---
@@ -219,11 +234,21 @@ Ensure You Have The Following Installed:
 
 3. **Environment Setup**
    
-   Create A `.env` File In The Root Directory:
+   Create A `.env` File In The Root Directory (or copy from `.env.example`):
    ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_USERNAME=Your_Email@gmail.com
+   SMTP_PASSWORD=Your_App_Password
+   SMTP_FROM=Your_Email@gmail.com
+   SMTP_FROM_NAME=Anubhav Chaurasia Portfolio
+   SMTP_TO=Recipient_Email@example.com
    ```
+   
+   **Note For Gmail Users:**
+   - Use App Passwords Instead Of Regular Passwords
+   - Enable 2-Factor Authentication
+   - Generate App Password: Google Account → Security → 2-Step Verification → App Passwords
 
 ### Development
 
@@ -238,7 +263,7 @@ pnpm dev
 bun dev
 ```
 
-The Application Will Be Available At `http://localhost:5173`
+The Application Will Be Available At `http://localhost:8080` (Configured In `vite.config.ts`)
 
 ### Build
 
@@ -253,6 +278,17 @@ pnpm build
 bun build
 ```
 
+Create A Development Build (With Source Maps):
+```bash
+npm run build:dev
+# or
+yarn build:dev
+# or
+pnpm build:dev
+# or
+bun build:dev
+```
+
 Preview The Production Build:
 ```bash
 npm run preview
@@ -263,6 +299,39 @@ pnpm preview
 # or
 bun preview
 ```
+
+### Email Template Preview
+
+View And Test The Email Templates Before Sending:
+
+**Option 1: Direct File Opening**
+```bash
+# Open In Default Browser (Windows)
+start Public/Email-Preview.html
+
+# Open In Default Browser (Mac)
+open Public/Email-Preview.html
+
+# Open In Default Browser (Linux)
+xdg-open Public/Email-Preview.html
+```
+
+**Option 2: Using Dev Server**
+```bash
+# Start Development Server
+npm run dev
+
+# Navigate To: http://localhost:8080/Email-Preview.html
+```
+
+**Option 3: Using PowerShell (Windows)**
+```powershell
+Invoke-Item Public\Email-Preview.html
+```
+
+The Preview Shows Both Email Templates:
+- **Admin Notification Email** - What You Receive When Someone Contacts You
+- **User Confirmation Email** - What The Sender Receives As Confirmation
 
 ---
 
@@ -299,7 +368,115 @@ bun preview
 
 ---
 
-## 📱 Responsive Design
+## 📧 Email System
+
+The Portfolio Features A Professional Email System Built With **Nodemailer** And **SMTP** Integration.
+
+### Features
+
+1. **Dual Email System**
+   - Admin Notification: Receive Contact Form Submissions
+   - User Confirmation: Automatic Confirmation Email To Sender
+
+2. **Professional Email Templates**
+   - Dark Theme Matching Portfolio Design
+   - Responsive HTML Emails
+   - Custom Fonts (Iceberg & Silkscreen)
+   - Inline CSS For Maximum Compatibility
+   - Beautiful Gradient Borders And Layouts
+
+3. **Email Preview System**
+   - Live Preview HTML File (`Public/Email-Preview.html`)
+   - Side-By-Side Template Comparison
+   - Mock Data For Testing
+   - No Backend Required For Preview
+
+4. **Security Features**
+   - Input Sanitization
+   - Email Format Validation
+   - Environment Variable Protection
+   - Secure SMTP Connection
+
+5. **Vercel Serverless Deployment**
+   - Deployed As Vercel Serverless Function
+   - `/api/send-email` Endpoint
+   - Auto-Scaling And High Availability
+
+### Email Template Structure
+
+**Admin Email Includes:**
+- Sender Name And Email (Clickable)
+- Full Message Content
+- Quick Reply Button
+- Timestamp
+- Professional Dark Theme Layout
+
+**Confirmation Email Includes:**
+- Personalized Greeting
+- Message Echo For Reference
+- Expected Response Time (24-48 Hours)
+- Social Media Links (LinkedIn, GitHub)
+- Professional Signature
+- Do Not Reply Notice
+
+### SMTP Configuration
+
+Supports Any SMTP Provider:
+- Gmail (Recommended)
+- Outlook/Office 365
+- SendGrid
+- Mailgun
+- Custom SMTP Servers
+
+**Gmail Setup:**
+1. Enable 2-Factor Authentication
+2. Generate App Password
+3. Use App Password In `SMTP_PASSWORD`
+4. Set `SMTP_HOST=smtp.gmail.com` And `SMTP_PORT=587`
+
+---
+
+## 🚀 Deployment
+
+### Vercel Deployment (Recommended)
+
+The Project Is Optimized For Vercel Deployment With Serverless Functions.
+
+1. **Push To GitHub**
+   ```bash
+   git add .
+   git commit -m "Deploy portfolio"
+   git push origin main
+   ```
+
+2. **Deploy To Vercel**
+   ```bash
+   # Install Vercel CLI
+   npm i -g vercel
+   
+   # Deploy
+   vercel
+   ```
+
+3. **Configure Environment Variables**
+   - Go To Vercel Dashboard → Your Project → Settings → Environment Variables
+   - Add All SMTP Variables From `.env`
+   - Redeploy After Adding Variables
+
+4. **API Endpoint**
+   - Your API Will Be Available At: `https://your-domain.vercel.app/api/send-email`
+   - Update Contact Form To Use This Endpoint
+
+### Alternative Deployment
+
+**Static Hosting (Netlify, Cloudflare Pages, GitHub Pages)**
+- Contact Form Will Need External API
+- Build: `npm run build`
+- Deploy `dist` Folder
+
+---
+
+## �📱 Responsive Design
 
 The Portfolio Adapts Seamlessly Across 5 Breakpoints:
 
@@ -367,8 +544,8 @@ This Project Is Licensed Under The **MIT License** - See The [LICENSE](LICENSE) 
 - **Tailwind CSS** - For Rapid Styling
 - **Three.js** - For 3D Graphics Capabilities
 - **Lucide** - For Elegant Icons
-- **Vercel** - For Seamless Deployment
-- **Supabase** - For Backend Infrastructure
+- **Nodemailer** - For Professional Email Functionality
+- **Vercel** - For Seamless Deployment And Serverless API Hosting
 
 ---
 

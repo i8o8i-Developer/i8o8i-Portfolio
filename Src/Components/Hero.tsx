@@ -33,8 +33,8 @@ const Hero = () => {
 
           {/* Name */}
           <h1
-            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-foreground mb-1 sm:mb-2 2xl:mb-4 opacity-0 animate-fade-in-up"
-            style={{ animationDelay: "700ms" }}
+            className="hero-mystery-quest text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-foreground mb-1 sm:mb-2 2xl:mb-4 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "700ms" } as React.CSSProperties}
           >
             <span className="bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text">
               Anubhav Chaurasia.
@@ -43,8 +43,8 @@ const Hero = () => {
 
           {/* Tagline */}
           <h2
-            className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-muted-foreground mb-2 sm:mb-4 2xl:mb-6 opacity-0 animate-fade-in-up min-h-[1.2em]"
-            style={{ animationDelay: "900ms" }}
+            className="hero-mystery-quest text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-muted-foreground mb-2 sm:mb-4 2xl:mb-6 opacity-0 animate-fade-in-up min-h-[1.2em]"
+            style={{ animationDelay: "900ms" } as React.CSSProperties}
           >
             <TypingEffect 
               text="I Build Secure, Scalable Systems."

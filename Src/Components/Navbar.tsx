@@ -18,6 +18,8 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const navRef = useRef<HTMLUListElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
+  const scrollPositionRef = useRef<number>(0);
   const { scrollToElement, scrollToTop } = useSmoothScroll({ offset: 80, duration: 200 });
 
   useEffect(() => {
@@ -57,19 +59,37 @@ const Navbar = () => {
   // Lock Body Scroll When Mobile Menu Is Open
   useEffect(() => {
     if (isMobileMenuOpen) {
+      // Save Current Scroll Position (Use Fallbacks For Reliability)
+      const scrollPos = window.scrollY ?? window.pageYOffset ?? document.documentElement.scrollTop ?? 0;
+      scrollPositionRef.current = scrollPos;
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
-      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.top = `-${scrollPos}px`;
+      // Mark Page As Menu-Open To Allow Other Components (Cursor, Animations) To Hide
+      document.body.classList.add('menu-open');
+      // For Accessibility: Mark Main Content As Inert/Hidden To Assist Screen Readers (Does NOT Change Visual Opacity)
+      const main = document.getElementById('main-content');
+      if (main) main.setAttribute('aria-hidden', 'true');
     } else {
-      const scrollY = document.body.style.top;
+      // Restore Scroll Position From Ref
+      const scrollY = scrollPositionRef.current;
+      // Remove The Fixed Lock Styles
       document.body.style.overflow = '';
       document.body.style.position = '';
       document.body.style.width = '';
       document.body.style.top = '';
-      if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-      }
+      // Restore To The Exact Position We Saved
+      window.scrollTo(0, scrollY);
+      // Remove Aria-Hidden From Main Content
+      const main = document.getElementById('main-content');
+      if (main) main.removeAttribute('aria-hidden');
+      // Restore Focus To The Menu Toggle To Prevent Focus Landing On An Interactive Element That Can Cause Navigation
+      setTimeout(() => {
+        menuToggleRef.current?.focus();
+      }, 0);
+      // Remove Menu-Open Class
+      document.body.classList.remove('menu-open');
     }
   }, [isMobileMenuOpen]);
 
@@ -101,10 +121,32 @@ const Navbar = () => {
     }
   }, [isMobileMenuOpen]);
 
-  const handleNavClick = (id: string) => {
-    scrollToElement(id);
-    setIsMobileMenuOpen(false);
+  // Wait Until Body Style Is No Longer 'Position: Fixed' (Menu Unlocked)
+  const waitForBodyRestore = (timeout = 1000) => {
+    return new Promise<void>((resolve) => {
+      const start = performance.now();
+      const check = () => {
+        const isFixed = window.getComputedStyle(document.body).position === 'fixed';
+        if (!isFixed) return resolve();
+        if (performance.now() - start > timeout) return resolve();
+        requestAnimationFrame(check);
+      };
+      requestAnimationFrame(check);
+    });
   };
+
+  const handleNavClick = async (id: string) => {
+    if (isMobileMenuOpen) {
+      // Close Menu First So Body Becomes Scrollable
+      setIsMobileMenuOpen(false);
+      await waitForBodyRestore();
+      // Now Scroll To Target Reliably
+      scrollToElement(id);
+    } else {
+      // Desktop: Scroll Immediately
+      scrollToElement(id);
+    }
+  }; 
 
   const handleNavKeyDown = (e: KeyboardEvent<HTMLAnchorElement>, index: number) => {
     const links = navRef.current?.querySelectorAll("a");
@@ -196,8 +238,12 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
+          ref={menuToggleRef}
           className="nav:hidden text-primary p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => {
+            // Toggle Mobile Menu State (body.menu-open Is Managed In The Effect)
+            setIsMobileMenuOpen(!isMobileMenuOpen);
+          }}
           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-menu"
@@ -209,20 +255,23 @@ const Navbar = () => {
         <div
           id="mobile-menu"
           ref={mobileMenuRef}
-          className={`fixed inset-0 top-0 z-[110] bg-background/95 nav:hidden transition-all duration-300 ${
-            isMobileMenuOpen ? "translate-x-0 backdrop-blur-2xl" : "translate-x-full backdrop-blur-none"
+          className={`fixed inset-0 top-0 z-[10000] bg-background nav:hidden ${
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
           }`}
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation menu"
-          {...(!isMobileMenuOpen && { inert: '' as any })}
+          {...(!isMobileMenuOpen && { inert: '' as unknown as undefined })}
           style={{
-            backdropFilter: isMobileMenuOpen ? 'blur(16px)' : 'none',
-            WebkitBackdropFilter: isMobileMenuOpen ? 'blur(16px)' : 'none',
-            willChange: isMobileMenuOpen ? 'transform' : 'auto'
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
+            transition: 'transform 300ms ease-in-out',
           }}
-        >
-          <div className="flex flex-col items-center justify-center h-full gap-8">
+>
+          {/* Solid Overlay To Prevent Page Bleed-Through While Menu Is Animating */}
+          <div className="absolute inset-0 bg-background z-10" aria-hidden="true" />
+
+          <div className="relative z-20 flex flex-col items-center justify-center h-full gap-8">
             <button
               className="absolute top-6 right-6 text-primary p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -239,14 +288,12 @@ const Navbar = () => {
                   handleNavClick(link.id);
                 }}
                 className="font-mono text-lg text-foreground hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-2"
-                style={{ animationDelay: `${index * 100}ms` }}
                 tabIndex={isMobileMenuOpen ? 0 : -1}
               >
                 <span className="text-primary block text-center text-sm mb-1" aria-hidden="true">
                   0{index + 1}.
                 </span>
-                {link.name}
-              </a>
+                {link.name}</a>
             ))}
           </div>
         </div>

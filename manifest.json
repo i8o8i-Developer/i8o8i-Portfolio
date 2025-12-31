@@ -1,0 +1,20 @@
+{
+  "name": "Anubhav Chaurasia",
+  "short_name": "Anubhav",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#25B271",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/Favicon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/Favicon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

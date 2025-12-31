@@ -150,6 +150,9 @@ i8o8i-Portfolio/
 │   └── send-email.ts            # Email API Endpoint (Nodemailer)
 ├── Public/                      # Static Assets
 │   └── Email-Preview.html       # Email Templates Preview
+
+Note: This Repository Uses A Top-Level `Images/` Folder For Public Images (Configured As Vite `publicDir: 'Images'` In `vite.config.ts`). Files In `Images/` Are Exposed At The Site Root In Production (E.g. `/My-Image.png`). Vercel Is Case-Sensitive - Prefer `public` Or Update `publicDir` Accordingly When Deploying.
+
 ├── Src/
 │   ├── Assets/                  # Images, Fonts, And Media Files
 │   ├── Components/              # React Components

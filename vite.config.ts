@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Use The 'Images' Folder As Vite's Public Dir So Static Images Are Included In Builds
+  publicDir: 'Images',
   server: {
     host: "::",
     port: 8080,

@@ -69,7 +69,7 @@ const About = () => {
                   <div className="relative z-10">
                     <div className="aspect-square rounded-lg overflow-hidden border-2 border-border bg-card">
                       <img 
-                        src="/Images/My-Image.png" 
+                        src="/My-Image.png" 
                         alt="Anubhav Chaurasia - Backend Developer" 
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
                         loading="lazy"

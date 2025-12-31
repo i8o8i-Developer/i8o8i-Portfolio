@@ -215,7 +215,7 @@ const Navbar = () => {
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation menu"
-          aria-hidden={!isMobileMenuOpen}
+          {...(!isMobileMenuOpen && { inert: '' as any })}
           style={{
             backdropFilter: isMobileMenuOpen ? 'blur(16px)' : 'none',
             WebkitBackdropFilter: isMobileMenuOpen ? 'blur(16px)' : 'none',

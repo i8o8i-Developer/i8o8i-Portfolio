@@ -59,30 +59,44 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <style>
         /* Responsive email styles */
         body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin:0; padding: 20px 12px; }
-        .email-container { max-width: 600px; margin: 0 auto; width: 100%; }
+        .email-container { max-width: 600px; margin: 0 auto; width: 100% !important; box-sizing: border-box; }
+        table { width: 100%; border-collapse: separate; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+        td { box-sizing: border-box; word-wrap: break-word; overflow-wrap: anywhere; }
         .header-td { padding: 28px 20px !important; text-align: center; }
         .content { padding: 20px 16px !important; }
         .footer-td { padding: 16px 12px !important; text-align: center; }
-        .btn { padding: 12px 20px !important; display: inline-block; }
-        .message { word-break: break-word; white-space: normal; }
+        .btn { padding: 12px 20px !important; display: inline-block; text-decoration: none; white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+        .message { word-break: break-word; overflow-wrap: anywhere; white-space: normal; }
         /* Make elements use border-box and constrain images */
         .email-container, .content, .header-td, .footer-td, .message { box-sizing: border-box; }
         img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; word-break: break-word; overflow-wrap: anywhere; }
         @media only screen and (max-width:480px) {
             h1 { font-size: 20px !important; line-height: 1.2 !important; }
             .header-td { padding: 20px 12px !important; }
             .content { padding: 16px 12px !important; }
             .footer-td { padding: 12px !important; }
-            .btn { padding: 12px 18px !important; }
+            .btn { padding: 12px 16px !important; display: block !important; width: 100% !important; box-sizing: border-box !important; }
+            .message { font-size: 15px !important; line-height: 1.6 !important; }
+        }
+        /* (<=360px) */
+        @media only screen and (max-width:360px) {
+            body { padding: 12px 8px !important; }
+            h1 { font-size: 18px !important; }
+            .header-td { padding: 12px 10px !important; }
+            .content { padding: 12px 10px !important; }
+            .footer-td { padding: 8px 10px !important; }
+            .btn { padding: 10px 12px !important; font-size: 13px !important; }
+            .message { font-size: 14px !important; line-height: 1.5 !important; }
         }
     </style>
 </head>
-<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', sans-serif; line-height: 1.6; color: #e5e7eb; background: #000000;">
+<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #e5e7eb; background: #000000;">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" class="email-container" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
             <td class="header-td" style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 40px 30px; text-align: center;">
-                <h1 style="margin: 0; font-size: 24px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">New Contact Message</h1>
+                <h1 style="margin: 0; font-size: 24px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', 'Arial Black', Impact, 'Segoe UI', Tahoma, Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px;">New Contact Message</h1>
                 <p style="margin: 12px 0 0 0; font-size: 13px; color: #6b7280; font-family: 'Iceberg', sans-serif; letter-spacing: 1px;">Portfolio Contact System</p>
             </td>
         </tr>
@@ -174,30 +188,44 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     <style>
         /* Responsive email styles */
         body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin:0; padding: 20px 12px; }
-        .email-container { max-width: 600px; margin: 0 auto; width: 100%; }
+        .email-container { max-width: 600px; margin: 0 auto; width: 100% !important; box-sizing: border-box; }
+        table { width: 100%; border-collapse: separate; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+        td { box-sizing: border-box; word-wrap: break-word; overflow-wrap: anywhere; }
         .header-td { padding: 28px 20px !important; text-align: center; }
         .content { padding: 20px 16px !important; }
         .footer-td { padding: 16px 12px !important; text-align: center; }
-        .btn { padding: 12px 20px !important; display: inline-block; }
-        .message { word-break: break-word; white-space: normal; }
+        .btn { padding: 12px 20px !important; display: inline-block; text-decoration: none; white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+        .message { word-break: break-word; overflow-wrap: anywhere; white-space: normal; }
         /* Make elements use border-box and constrain images */
         .email-container, .content, .header-td, .footer-td, .message { box-sizing: border-box; }
         img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; word-break: break-word; overflow-wrap: anywhere; }
         @media only screen and (max-width:480px) {
             h1 { font-size: 20px !important; line-height: 1.2 !important; }
             .header-td { padding: 20px 12px !important; }
             .content { padding: 16px 12px !important; }
             .footer-td { padding: 12px !important; }
-            .btn { padding: 12px 18px !important; }
+            .btn { padding: 12px 16px !important; display: block !important; width: 100% !important; box-sizing: border-box !important; }
+            .message { font-size: 15px !important; line-height: 1.6 !important; }
+        }
+        /* (<=360px) */
+        @media only screen and (max-width:360px) {
+            body { padding: 12px 8px !important; }
+            h1 { font-size: 18px !important; }
+            .header-td { padding: 12px 10px !important; }
+            .content { padding: 12px 10px !important; }
+            .footer-td { padding: 8px 10px !important; }
+            .btn { padding: 10px 12px !important; font-size: 13px !important; }
+            .message { font-size: 14px !important; line-height: 1.5 !important; }
         }
     </style>
 </head>
-<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', sans-serif; line-height: 1.7; color: #e5e7eb; background: #000000;">
+<body style="margin: 0; padding: 20px 12px; font-family: 'Iceberg', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.7; color: #e5e7eb; background: #000000;">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" class="email-container" style="max-width: 600px; margin: 0 auto; background: #0a0a0a; border: 2px solid #10b981; border-radius: 8px; overflow: hidden;">
         <!-- Header -->
         <tr>
             <td class="header-td" style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 50px 30px; text-align: center;">
-                <h1 style="margin: 0; font-size: 32px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Message Received!</h1>
+                <h1 style="margin: 0; font-size: 32px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', 'Arial Black', Impact, 'Segoe UI', Tahoma, Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px;">Message Received!</h1>
                 <p style="margin: 12px 0 0 0; font-size: 14px; color: #6b7280; font-family: 'Iceberg', sans-serif;">Thank You For Reaching Out</p>
             </td>
         </tr>

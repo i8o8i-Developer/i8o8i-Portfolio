@@ -439,7 +439,7 @@ Supports Any SMTP Provider:
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel Deployment (Recommended)
 
@@ -448,7 +448,7 @@ The Project Is Optimized For Vercel Deployment With Serverless Functions.
 1. **Push To GitHub**
    ```bash
    git add .
-   git commit -m "Deploy portfolio"
+   git commit -m "Deploy Portfolio"
    git push origin main
    ```
 
@@ -494,7 +494,7 @@ The Portfolio Adapts Seamlessly Across 5 Breakpoints:
 
 ---
 
-## 🎨 Projects Showcase
+## Projects Showcase
 
 ### Featured Projects (4)
 
@@ -540,7 +540,7 @@ This Project Is Licensed Under The **MIT License** - See The [LICENSE](LICENSE) 
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Radix UI** - For Accessible Component Primitives
 - **Shadcn UI** - For Beautiful Component Designs
@@ -556,6 +556,6 @@ This Project Is Licensed Under The **MIT License** - See The [LICENSE](LICENSE) 
 
 **⭐ Star This Repository If You Found It Helpful!**
 
-Made with ❤️ by [i8o8i Developer](https://github.com/i8o8i-Developer)
+Made With ❤️ By [i8o8i Developer](https://github.com/i8o8i-Developer)
 
 </div>

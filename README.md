@@ -62,21 +62,21 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 
 ## ✨ Key Features
 
-### 🎨 Design & UX
+### Design & UX
 - **Custom Cursor Effects**: Interactive Trail Cursor With Smooth Animations
 - **Scroll Reveal Animations**: Directional Fade-In Effects For Engaging Content Discovery
 - **Dark Theme**: Modern Dark Mode Optimized For Reduced Eye Strain
 - **Smooth Scrolling**: Buttery Smooth Navigation With Custom Easing Functions
 - **3D Elements**: Three.js Integration For Immersive Visual Experiences
 
-### 📱 Responsive Breakpoints
+### Responsive Breakpoints
 - **Mobile**: 320px - 640px (Compact Layouts)
 - **Tablet**: 640px - 1024px (Medium Spacing)
 - **Laptop**: 1024px - 1366px (Optimized For Common Displays)
 - **Desktop**: 1366px - 1920px (Standard Desktop Experience)
 - **Large Display**: 2560x1600+ (Enhanced Spacing And Typography)
 
-### 🚀 Performance
+### Performance
 - **Optimized Animations**: Reduced Trail Points (8 Instead Of 15) And Throttled Scroll Events
 - **Lazy Loading**: Components And Images Load On-Demand
 - **Code Splitting**: Automatic Chunking For Faster Initial Load
@@ -208,7 +208,7 @@ Note: This Repository Uses A Top-Level `Images/` Folder For Public Images (Confi
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 

@@ -97,7 +97,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <tr>
             <td class="header-td" style="background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); border-bottom: 3px solid #10b981; padding: 40px 30px; text-align: center;">
                 <h1 style="margin: 0; font-size: 24px; font-weight: 700; color: #10b981; font-family: 'Silkscreen', 'Arial Black', Impact, 'Segoe UI', Tahoma, Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px;">New Contact Message</h1>
-                <p style="margin: 12px 0 0 0; font-size: 13px; color: #6b7280; font-family: 'Iceberg', sans-serif; letter-spacing: 1px;">Portfolio Contact System</p>
+                <p style="margin: 12px 0 0 0; font-size: 13px; color: #6b7280; font-family: 'Iceberg', sans-serif; letter-spacing: 1px;">Serverless Contact API • v1.0</p>
             </td>
         </tr>
         
@@ -160,14 +160,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <!-- Footer -->
         <tr>
             <td class="footer-td" style="background: #000000; padding: 24px 30px; text-align: center; border-top: 2px solid #1f2937;">
-                <div style="color: #10b981; font-weight: 600; font-size: 12px; margin-bottom: 8px; font-family: 'Silkscreen', sans-serif;">${new Date().toLocaleString('en-US', { 
+                <div style="color: #10b981; font-weight: 600; font-size: 12px; margin-bottom: 8px; font-family: 'Silkscreen', sans-serif;">${new Date().toLocaleString('en-IN', { 
+                  timeZone: 'Asia/Kolkata',
                   year: 'numeric', 
                   month: 'long', 
                   day: 'numeric', 
                   hour: '2-digit', 
-                  minute: '2-digit'
-                })}</div>
-                <div style="color: #6b7280; font-size: 11px; font-family: 'Iceberg', sans-serif;">Automated Portfolio Contact System</div>
+                  minute: '2-digit',
+                  second: '2-digit',
+                  hour12: true
+                })} IST</div>
+                <div style="color: #6b7280; font-size: 11px; font-family: 'Iceberg', sans-serif;">Automated Message Delivery • API Gateway</div>
             </td>
         </tr>
     </table>
@@ -302,7 +305,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <!-- Footer -->
         <tr>
             <td class="footer-td" style="background: #000000; padding: 30px 20px; text-align: center; border-top: 2px solid #1f2937;">
-                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">This Is An Automated Confirmation From The Portfolio Contact System.</div>
+                <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">This Is An Automated Confirmation From The Serverless Contact API.</div>
                 <div style="color: #6b7280; font-size: 12px; line-height: 1.6; margin: 5px 0; font-family: 'Iceberg', sans-serif;">Your Message Has Been Securely Received And Logged.</div>
                 <div style="color: #ef4444; font-weight: 600; margin-top: 12px; font-size: 11px; font-family: 'Silkscreen', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Please Do Not Reply To This Email</div>
             </td>

@@ -1,0 +1,19 @@
+# i8o8i - Anubhav Chaurasia Portfolio
+# https://i8o8i.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /Images/
+Allow: /Public/
+
+Disallow: /api/
+Disallow: /*.json
+Disallow: /node_modules/
+
+# Sitemap Location
+Sitemap: https://i8o8i.vercel.app/sitemap.xml
+
+# Crawl-Delay (Optional - Helps Prevent Overloading Server)
+Crawl-delay: 1

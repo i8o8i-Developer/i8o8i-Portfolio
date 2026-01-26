@@ -15,6 +15,7 @@ import LoadingScreen from "@/Components/LoadingScreen";
 import BackToTop from "@/Components/BackToTop";
 import SkipToContent from "@/Components/SkipToContent";
 import ThreeBackground from "@/Components/ThreeBackground";
+import SEO from "@/Components/SEO";
 import { useKeyboardNavigation } from "@/Hooks/UseKeyboardNavigation";
 
 
@@ -25,16 +26,6 @@ const Index = () => {
   useKeyboardNavigation();
 
   useEffect(() => {
-    document.title = "Anubhav Chaurasia | Backend Developer";
-    
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Anubhav Chaurasia - Backend Developer Specializing In AI-Powered Distributed Systems, Quantum-Resistant Cryptography, And Production-Scale Applications."
-      );
-    }
-
     // Hide Default Cursor On Desktop
     if (window.innerWidth >= 768) {
       document.body.style.cursor = "none";
@@ -54,6 +45,9 @@ const Index = () => {
 
   return (
     <>
+      {/* SEO Component For Dynamic Meta Tag Updates */}
+      <SEO />
+      
       <SkipToContent />
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
       <ThreeBackground />

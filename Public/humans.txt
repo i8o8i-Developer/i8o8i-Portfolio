@@ -1,0 +1,46 @@
+/* TEAM */
+Developer: Anubhav Chaurasia
+Site: https://i8o8i.vercel.app
+Twitter: @i8o8i
+GitHub: https://github.com/i8o8i-Developer
+Location: India
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React 18, TypeScript, Tailwind CSS
+Software: VS Code, Git, Vite
+Frameworks: React, Three.js, Radix UI
+Backend: Node.js, Vercel Functions
+
+/* THANKS */
+Font Provider: Google Fonts
+Icons: Lucide React
+Design System: shadcn/ui
+3D Graphics: Three.js
+Animation: Framer Motion
+
+/* KEYWORDS */
+i8o8i, I8O8I, Anubhav Chaurasia, Backend Developer, AI Engineer, Machine Learning, 
+Python, Django, FastAPI, React, TypeScript, Blockchain, Cybersecurity, Web3, 
+Distributed Systems, Cloud Computing, DevOps, Full Stack Developer
+
+/* EXPERTISE */
+- Backend Development (Python, Django, FastAPI)
+- AI/ML Engineering (TensorFlow, PyTorch, Scikit-learn)
+- Frontend Development (React, TypeScript, Tailwind CSS)
+- Blockchain & Web3 (Smart Contracts, DeFi)
+- Quantum-Resistant Cryptography
+- Distributed Systems Architecture
+- Cloud Computing & DevOps
+- Cybersecurity & Penetration Testing
+
+/* PROJECTS HIGHLIGHT */
+- AgriSense Guardian (Serving 12,000+ farmers)
+- AI-Powered Systems
+- Quantum-Resistant Cryptography Solutions
+- Full-Stack Web Applications
+- Blockchain & DeFi Projects
+
+/* LAST UPDATE */
+Date: 2026-01-27
+By: i8o8i (Anubhav Chaurasia)

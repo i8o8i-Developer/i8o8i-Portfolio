@@ -10,7 +10,7 @@
 <div align="center">
 
 ![Portfolio Banner](https://img.shields.io/badge/Portfolio-i8o8i-10B981?style=for-the-badge&logo=react&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.5.8-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -62,21 +62,21 @@ This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplina
 
 ## ✨ Key Features
 
-### 🎨 Design & UX
+### Design & UX
 - **Custom Cursor Effects**: Interactive Trail Cursor With Smooth Animations
 - **Scroll Reveal Animations**: Directional Fade-In Effects For Engaging Content Discovery
 - **Dark Theme**: Modern Dark Mode Optimized For Reduced Eye Strain
 - **Smooth Scrolling**: Buttery Smooth Navigation With Custom Easing Functions
 - **3D Elements**: Three.js Integration For Immersive Visual Experiences
 
-### 📱 Responsive Breakpoints
+### Responsive Breakpoints
 - **Mobile**: 320px - 640px (Compact Layouts)
 - **Tablet**: 640px - 1024px (Medium Spacing)
 - **Laptop**: 1024px - 1366px (Optimized For Common Displays)
 - **Desktop**: 1366px - 1920px (Standard Desktop Experience)
 - **Large Display**: 2560x1600+ (Enhanced Spacing And Typography)
 
-### 🚀 Performance
+### Performance
 - **Optimized Animations**: Reduced Trail Points (8 Instead Of 15) And Throttled Scroll Events
 - **Lazy Loading**: Components And Images Load On-Demand
 - **Code Splitting**: Automatic Chunking For Faster Initial Load
@@ -208,7 +208,7 @@ Note: This Repository Uses A Top-Level `Images/` Folder For Public Images (Confi
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -439,7 +439,7 @@ Supports Any SMTP Provider:
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel Deployment (Recommended)
 
@@ -448,7 +448,7 @@ The Project Is Optimized For Vercel Deployment With Serverless Functions.
 1. **Push To GitHub**
    ```bash
    git add .
-   git commit -m "Deploy portfolio"
+   git commit -m "Deploy Portfolio"
    git push origin main
    ```
 
@@ -494,7 +494,7 @@ The Portfolio Adapts Seamlessly Across 5 Breakpoints:
 
 ---
 
-## 🎨 Projects Showcase
+## Projects Showcase
 
 ### Featured Projects (4)
 
@@ -540,7 +540,7 @@ This Project Is Licensed Under The **MIT License** - See The [LICENSE](LICENSE) 
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Radix UI** - For Accessible Component Primitives
 - **Shadcn UI** - For Beautiful Component Designs
@@ -556,6 +556,6 @@ This Project Is Licensed Under The **MIT License** - See The [LICENSE](LICENSE) 
 
 **⭐ Star This Repository If You Found It Helpful!**
 
-Made with ❤️ by [i8o8i Developer](https://github.com/i8o8i-Developer)
+Made With ❤️ By [i8o8i Developer](https://github.com/i8o8i-Developer)
 
 </div>

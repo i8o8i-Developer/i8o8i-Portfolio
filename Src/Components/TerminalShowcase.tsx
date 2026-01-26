@@ -5,7 +5,7 @@ import { useInView } from "@/Hooks/UseInView";
 const commands = [
   {
     command: "Portfolio --version",
-    output: "Anubhav Chaurasia v2024.12.28",
+    output: "Anubhav Chaurasia v2.5.8",
     delay: 100,
   },
   {

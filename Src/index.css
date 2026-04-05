@@ -108,16 +108,19 @@ h3, h4, h5, h6, button, .heading, .ui-text {
     --sidebar-border: 0 0% 16%;
     --sidebar-ring: 142 90% 55%;
 
-    /* Chart Colors - Bright Greens */
-    --chart-1: 142 90% 55%;
-    --chart-2: 152 85% 50%;
-    --chart-3: 162 80% 48%;
-    --chart-4: 172 75% 52%;
-    --chart-5: 132 70% 58%;
+    /* Chart Colors — colorful neon palette */
+    --chart-1: 142 90% 55%;   /* neon green */
+    --chart-2: 213 98% 61%;   /* electric blue */
+    --chart-3: 270 80% 66%;   /* violet */
+    --chart-4: 186 92% 54%;   /* cyan */
+    --chart-5: 336 80% 59%;   /* magenta */
 
     /* Custom Portfolio Colors */
-    --cyan: 168 80% 55%;
+    --cyan: 186 92% 54%;
     --green: 142 90% 55%;
+    --blue: 213 98% 61%;
+    --violet: 270 80% 66%;
+    --magenta: 336 80% 59%;
     --navy: 0 0% 3%;
     --navy-light: 0 0% 9%;
     --slate: 0 0% 85%;
@@ -132,7 +135,7 @@ h3, h4, h5, h6, button, .heading, .ui-text {
     --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.5);
     --shadow-md: 0 10px 15px -3px hsl(0 0% 0% / 0.6);
     --shadow-lg: 0 20px 25px -5px hsl(0 0% 0% / 0.7);
-    --shadow-glow: 0 0 50px hsl(142 90% 55% / 0.3);
+    --shadow-glow: 0 0 40px hsl(142 90% 55% / 0.25), 0 0 80px hsl(213 98% 61% / 0.12), 0 0 80px hsl(270 80% 66% / 0.10);
 
     /* Animation Timing */
     --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);

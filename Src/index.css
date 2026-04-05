@@ -63,25 +63,26 @@ h3, h4, h5, h6, button, .heading, .ui-text {
 
 @layer base {
   :root {
-    /* Pure Black Background With Bright Green */
-    --background: 0 0% 2%;
+    /* Pure near-black background — green only from the dot-grid texture */
+    --background: 0 0% 3%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 5%;
+    /* Cards/popovers: near-black so they pop against the green bg */
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 4%;
+    --popover: 0 0% 5%;
     --popover-foreground: 0 0% 100%;
 
     /* Bright Neon Green - Primary */
     --primary: 142 90% 55%;
-    --primary-foreground: 0 0% 2%;
+    --primary-foreground: 0 0% 4%;
 
     /* Dark Secondary */
-    --secondary: 0 0% 8%;
+    --secondary: 0 0% 9%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Muted - Brighter */
+    /* Muted */
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 85%;
 
@@ -92,19 +93,19 @@ h3, h4, h5, h6, button, .heading, .ui-text {
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 10%;
+    --border: 0 0% 16%;
+    --input: 0 0% 9%;
     --ring: 142 90% 55%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 2%;
+    --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 142 90% 55%;
-    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-primary-foreground: 0 0% 4%;
     --sidebar-accent: 142 40% 8%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-border: 0 0% 16%;
     --sidebar-ring: 142 90% 55%;
 
     /* Chart Colors - Bright Greens */
@@ -117,8 +118,8 @@ h3, h4, h5, h6, button, .heading, .ui-text {
     /* Custom Portfolio Colors */
     --cyan: 168 80% 55%;
     --green: 142 90% 55%;
-    --navy: 0 0% 2%;
-    --navy-light: 0 0% 8%;
+    --navy: 0 0% 3%;
+    --navy-light: 0 0% 9%;
     --slate: 0 0% 85%;
     --slate-light: 0 0% 100%;
 
@@ -169,15 +170,15 @@ h3, h4, h5, h6, button, .heading, .ui-text {
   }
 
   .dark {
-    --background: 0 0% 2%;
+    --background: 0 0% 3%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 5%;
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 4%;
+    --popover: 0 0% 5%;
     --popover-foreground: 0 0% 98%;
     --primary: 142 90% 55%;
-    --primary-foreground: 0 0% 2%;
-    --secondary: 0 0% 8%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 75%;
@@ -185,16 +186,16 @@ h3, h4, h5, h6, button, .heading, .ui-text {
     --accent-foreground: 142 90% 55%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 18%;
-    --input: 0 0% 10%;
+    --border: 0 0% 16%;
+    --input: 0 0% 9%;
     --ring: 142 90% 55%;
-    --sidebar-background: 0 0% 2%;
+    --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 142 90% 55%;
-    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-primary-foreground: 0 0% 4%;
     --sidebar-accent: 142 40% 8%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-border: 0 0% 16%;
     --sidebar-ring: 142 90% 55%;
   }
 }

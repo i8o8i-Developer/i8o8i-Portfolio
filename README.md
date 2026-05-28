@@ -46,51 +46,45 @@
 
 ---
 
-## 🎯 About The Project
+## About
 
-This Portfolio Is A Comprehensive Showcase Of My Journey As A **Multi-Disciplinary Software Engineer** Specializing In **AI/ML Systems**, **Backend Development**, **Cybersecurity**, And **Full-Stack Applications**. Built With Modern Web Technologies, It Demonstrates Expertise In Creating Performant, Accessible, And Visually Stunning Web Experiences.
+This Portfolio Showcases My Work As A **Software Engineer** Specializing In **Backend Development**, **AI/ML**, **Cybersecurity**, And **Full-Stack Applications**. Built With Modern Web Technologies, It Demonstrates Experience In Creating Performant, Accessible Web Experiences.
 
 ### Why This Portfolio?
 
-- **Performance First**: Optimized Animations, Lazy Loading, And Efficient Rendering For Smooth User Experience
-- **Fully Responsive**: Seamless Experience Across All Devices From Mobile (320px) To Large Displays (2560x1600)
-- **Accessibility**: WCAG 2.1 Compliant With Keyboard Navigation, ARIA Labels, And Screen Reader Support
-- **Modern Stack**: Leveraging React 18, TypeScript, Tailwind CSS, And Cutting-Edge Libraries
-- **Real Projects**: Showcasing 14+ Production-Ready Projects With Measurable Impact
+- **Performance First**: Optimized Animations, Lazy Loading, And Efficient Rendering
+- **Fully Responsive**: Seamless Experience Across All Devices From Mobile To Large Displays
+- **Accessibility**: Keyboard Navigation, ARIA Labels, And Screen Reader Support
+- **Modern Stack**: React 18, TypeScript, Tailwind CSS
+- **Real Projects**: Showcasing Projects Across Multiple Domains
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### Design & UX
-- **Custom Cursor Effects**: Interactive Trail Cursor With Smooth Animations
-- **Scroll Reveal Animations**: Directional Fade-In Effects For Engaging Content Discovery
+- **Custom Cursor Effects**: Interactive Trail Cursor Animations
+- **Scroll Reveal Animations**: Directional Fade-In Effects
 - **Dark Theme**: Modern Dark Mode Optimized For Reduced Eye Strain
-- **Smooth Scrolling**: Buttery Smooth Navigation With Custom Easing Functions
-- **3D Elements**: Three.js Integration For Immersive Visual Experiences
+- **Smooth Scrolling**: Custom Easing Functions For Navigation
+- **3D Elements**: Three.js Integration
 
-### Responsive Breakpoints
-- **Mobile**: 320px - 640px (Compact Layouts)
-- **Tablet**: 640px - 1024px (Medium Spacing)
-- **Laptop**: 1024px - 1366px (Optimized For Common Displays)
-- **Desktop**: 1366px - 1920px (Standard Desktop Experience)
-- **Large Display**: 2560x1600+ (Enhanced Spacing And Typography)
+### Responsive breakpoints
+- **Mobile**: 320px - 640px
+- **Tablet**: 640px - 1024px
+- **Laptop**: 1024px - 1366px
+- **Desktop**: 1366px - 1920px
+- **Large display**: 2560x1600+
 
-### Performance
-- **Optimized Animations**: Reduced Trail Points (8 Instead Of 15) And Throttled Scroll Events
-- **Lazy Loading**: Components And Images Load On-Demand
-- **Code Splitting**: Automatic Chunking For Faster Initial Load
-- **Efficient Re-Renders**: Memoization And Proper React Hooks Usage
-
-### 📊 Sections
-1. **Hero**: Dynamic Introduction With Animated Statistics
-2. **About**: Personal Story And Expertise Overview
-3. **Experience**: Interactive Timeline With 6+ Professional Roles
-4. **Projects**: 14 Projects Across AI/ML, Security, Blockchain, Full-Stack, DevOps, And Automation
-5. **Skills**: 9 Categories With 40+ Technologies And Proficiency Levels
-6. **Certifications**: 9 Industry Certifications From Google, Anthropic, Forage
-7. **Testimonials**: Client Feedback Carousel
-8. **Contact**: Professional Email System With Dual Templates (Admin + User Confirmation)
+### Sections
+1. **Hero**: Dynamic introduction with animated statistics
+2. **About**: Personal story and expertise overview
+3. **Experience**: Interactive timeline with professional roles
+4. **Projects**: Projects across AI/ML, security, blockchain, full-stack, and automation
+5. **Skills**: Skill categories with proficiency levels
+6. **Certifications**: Industry certifications
+7. **Testimonials**: Client feedback carousel
+8. **Contact**: Email system with dual templates
 
 ---
 
@@ -496,18 +490,15 @@ The Portfolio Adapts Seamlessly Across 5 Breakpoints:
 
 ## Projects Showcase
 
-### Featured Projects (4)
+### Featured Projects (3)
 
-1. **AgriSense Guardian** - Multi-Agent AI System For Agriculture
-   - 12,000+ Users, ₹2.3Cr Losses Prevented, 1.2s Response Time
+1. **ENIGMA AI Assistant** - Modular Personal AI Assistant
+   - 7 AI Modules, Memory Management, Multi-Model Support
 
-2. **ENIGMA AI Assistant** - Sophisticated Personal AI
-   - 7 AI Modules, 97.5% Security, Advanced Memory
-
-3. **SYNRIX Version Control** - Git Alternative
+2. **SYNRIX Version Control** - Git Alternative
    - 70% Space Savings, 100% Recovery, Quantum-Safe
 
-4. **Pranjal Portfolio** - Full-Stack Portfolio With 3D
+3. **Pranjal Portfolio** - Full-Stack Portfolio With 3D
    - Three.js Graphics, Full CMS Admin, JWT Authentication
 
 ### Other Noteworthy Projects (10)

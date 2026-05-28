@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     proxy: {
-      '/Send-Email.php': {
+      '/api': {
         target: 'http://localhost:8000',
         changeOrigin: true,
       },

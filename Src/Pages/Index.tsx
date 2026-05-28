@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
 import About from "@/Components/About";
-import Experience from "@/Components/Experience";
-import Projects from "@/Components/Projects";
-import Skills from "@/Components/Skills";
-import Certificates from "@/Components/Certificates";
-import Testimonials from "@/Components/Testimonials";
-import Contact from "@/Components/Contact";
-import Footer from "@/Components/Footer";
 import FixedSocialLinks from "@/Components/FixedSocialLinks";
 import CustomCursor from "@/Components/CustomCursor";
 import LoadingScreen from "@/Components/LoadingScreen";
@@ -17,6 +10,14 @@ import SkipToContent from "@/Components/SkipToContent";
 import ThreeBackground from "@/Components/ThreeBackground";
 import SEO from "@/Components/SEO";
 import { useKeyboardNavigation } from "@/Hooks/UseKeyboardNavigation";
+
+const Experience = lazy(() => import("@/Components/Experience"));
+const Projects = lazy(() => import("@/Components/Projects"));
+const Skills = lazy(() => import("@/Components/Skills"));
+const Certificates = lazy(() => import("@/Components/Certificates"));
+const Testimonials = lazy(() => import("@/Components/Testimonials"));
+const Contact = lazy(() => import("@/Components/Contact"));
+const Footer = lazy(() => import("@/Components/Footer"));
 
 
 const Index = () => {
@@ -63,14 +64,28 @@ const Index = () => {
         <main role="main">
           <Hero />
           <About />
-          <Experience />
-          <Projects />
-          <Skills />
-          <Certificates />
-          <Testimonials />
-          <Contact />
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Experience />
+          </Suspense>
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Projects />
+          </Suspense>
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Skills />
+          </Suspense>
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Certificates />
+          </Suspense>
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Testimonials />
+          </Suspense>
+          <Suspense fallback={<div className="h-64 flex items-center justify-center text-muted-foreground font-mono text-sm">Loading...</div>}>
+            <Contact />
+          </Suspense>
         </main>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
         <BackToTop />
       </div>
     </>

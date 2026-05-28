@@ -21,76 +21,62 @@ const experiences: Experience[] = [
   {
     title: "Python Developer Intern",
     company: "Banao Technologies (ATGWorld Networks Pvt Ltd)",
-    date: "December 2025 - Present (6 Months)",
-    highlights: ["Performance-Based", "Remote", "GitHub Daily"],
+    date: "December 2025 - Present",
+    highlights: ["Remote", "Python", "Git"],
     bullets: [
-      "Selected For Structured Python Development Internship Under Continuous Skill Learning And Assessment System Focused On Real-World Development Tasks, Bug Fixes, And Feature Implementations",
-      "Work On Python-Based Features, Bug Resolution, And Task-Based Deliverables With Daily Code Submissions To GitHub Repositories And End-Of-Day (EOD) Reports For Professional Development Workflows",
-      "Participated In Free Internal Training And Performance Assessments Throughout 1-Month Probation Period With Evaluation By Assigned Mentor, Eligibility For Internship Completion Certificate After 6 Months",
-      "Gained Professional Exposure To Software Debugging, Version Control, Remote Team Collaboration, Secure Development Practices, Data Confidentiality, And Technical Reporting Standards",
-      "Bound By NDA Protecting Technical, Business, Software, And Proprietary Information With Focus On Secure Coding Practices And Professional Compliance Throughout The Internship Period",
+      "Working On Python-Based Features, Bug Fixes, And Task-Based Deliverables With Daily Code Submissions To GitHub",
+      "Participating In Code Reviews, Internal Training, And Performance Assessments",
+      "Gaining Experience In Software Debugging, Version Control, And Remote Team Collaboration",
+      "Adhering To Secure Development Practices And Professional Compliance Standards",
     ],
   },
   {
-    title: "Lead AI Developer",
-    company: "AgriSense Guardian",
-    date: "November 2025- December 2025",
-    highlights: ["12,000+ Users", "87% Faster", "₹2.3Cr Saved"],
-    bullets: [
-      "Architected India's First Multi-Agent AI System Using Google ADK & A2A Protocol With 4 Specialized Agents (Orchestrator, Forecast, Verify, Planner) Serving 12,000+ Farmers Across 15 Indian States",
-      "Achieved 87% Processing Time Reduction (8.2s → 1.1s) Through Parallel Agent Execution, Async Messaging, Connection Pooling, And Redis Caching (65% API Call Reduction)",
-      "Integrated Blockchain Technology For Immutable Data Logging, Audit Trails, And Tamper-Proof Verification With 97.3% Accuracy Triple-Verification Loops",
-      "Processed 23TB+ Daily Agricultural Data From 12+ APIs (NASA POWER, ESA Copernicus, OpenWeatherMap, ISRIC SoilGrids, USGS, Open-Meteo) Using Gemini 2.5 Flash Lite",
-      "Prevented ₹2.3 Crore In Agricultural Losses Through Real-Time Climate Predictions With Fault-Tolerant Architecture, Circuit Breakers, And Exponential Backoff",
-    ],
-  },
-  {
-    title: "AI Systems Architect",
+    title: "AI Systems Developer",
     company: "ENIGMA Project",
     date: "June 2024 - Present",
-    highlights: ["7 AI Modules", "97.5% Security", "Advanced Memory"],
+    highlights: ["7 Modules", "Multi-Model", "Memory System"],
     bullets: [
-      "Designed Sophisticated Personal AI Assistant With 7 Specialized Modules (Knowledge, Mathematics, Programming, Reasoning, Personality, Action, Search) Using Cerebras AI, Groq LLM, And Google Gemini",
-      "Implemented Enterprise-Grade Function Calling With Automatic Detection, Memory Integration, Confidence Scoring, And Dynamic AI Parameter Optimization For Optimal Response Generation",
-      "Built Advanced Memory System With Vector Storage, 100-Entry Context Windows Per Model, Auto-Promotion To Long-Term Storage, And AI-Powered Context Awareness With Unlimited Task Detection",
-      "Achieved 97.5% Threat Detection Accuracy With PromptGuard Security System Using Multi-Layer Architecture (Groq LLaMA Prompt Guard + Advanced Heuristics For Encoding Attack Detection)",
-      "Developed Multi-Turn Clarification Flows, Enhanced Code Extraction With AI Response Cleaning, Dynamic Voice Interaction With Pause/Resume, And Auto-Learning User Profiles Through Conversational Intelligence",
+      "Designed A Personal AI Assistant With 7 Specialized Modules (Knowledge, Mathematics, Programming, Reasoning, Personality, Action, Search) Using Cerebras AI, Groq LLM, And Google Gemini",
+      "Implemented Function Calling With Automatic Detection, Memory Integration, And Confidence Scoring For Optimal Response Generation",
+      "Built A Memory System With Vector Storage, Context Windows, And Auto-Promotion To Long-Term Storage",
+      "Developed Security Filtering With Multi-Layer Threat Detection And Encoding Attack Prevention",
+      "Created Multi-Turn Clarification Flows, Code Extraction, Voice Interaction, And User Profile Learning",
     ],
   },
   {
-    title: "Backend Engineer",
+    title: "Software Developer",
     company: "SYNRIX Version Control",
     date: "October 2025 - Present",
-    highlights: ["70% Space Savings", "Quantum-Safe", "100% Recovery"],
+    highlights: ["70% Space Savings", "Quantum-Safe", "C#/.NET"],
     bullets: [
-      "Developed Revolutionary Git Alternative With Quantum-Resistant Cryptography, Intuitive Command Names, Safe-By-Default Operations, And Automatic Reflog For Everything Using C# & .NET 8.0",
-      "Implemented SHA-256 Hashing With GZIP Compression Achieving 70% Space Savings While Maintaining Enterprise-Grade Performance And Security",
-      "Built Complete Operation History Logging With Simple Undo/Redo Commands, One-Command Recovery System, And Zero Fear Of Data Loss (100% Recoverable Operations)",
-      "Created Comprehensive File Tracking, Custom Diff Algorithm, Enhanced Branch Management, And Clean Commit History Tools For Developer Productivity",
+      "Developing A Version Control Tool With Quantum-Resistant Cryptography, Intuitive Commands, And Safe-By-Default Operations Using C# & .NET 8.0",
+      "Implemented SHA-256 Hashing With GZIP Compression Achieving 70% Space Savings While Maintaining Performance And Security",
+      "Built Operation History Logging With Undo/Redo Commands And A One-Command Recovery System",
+      "Created File Tracking, Custom Diff Algorithm, Branch Management, And Commit History Tools",
     ],
   },
   {
     title: "Security Engineer",
     company: "Cybersecurity Projects",
-    date: "2022 - Still Going / Learning",
-    highlights: ["Military-Grade", "E2E Encryption", "Post-Quantum"],
+    date: "2022 - Present",
+    highlights: ["End-to-end", "Encryption", "Post-Quantum"],
     bullets: [
-      "Built QuantumChat - Quantum-Resistant P2P Messaging Platform With Military-Grade End-To-End Encryption, Perfect Forward Secrecy, Metadata Protection, And Post-Quantum Cryptographic Algorithms",
-      "Developed DST Torrent - Decentralized File Sharing System With AES-256-GCM And RSA-4096 Encryption, Blockchain Verification, P2P Architecture, And Tamper-Proof Audit Trails",
-      "Implemented I8o8iCoin - Complete Blockchain From Scratch With Custom Proof-Of-Work Consensus, Transaction Validation, Digital Wallet Management, And SHA-256 Cryptographic Hashing",
-      "Created Secure Communication Systems With TLS/SRTP Encryption, Zero-Knowledge Authentication, Ephemeral Messaging, And Double-Spending Prevention Mechanisms",
+      "Built QuantumChat - A P2P Messaging Platform With End-To-End Encryption, Perfect Forward Secrecy, Metadata Protection, And Post-Quantum Cryptographic Algorithms",
+      "Developed DST Torrent - A Decentralized File Sharing System With AES-256-GCM And RSA-4096 Encryption, Blockchain Verification, And P2P Architecture",
+      "Implemented I8o8iCoin - A Complete Blockchain From Scratch With Custom Proof-Of-Work Consensus, Transaction Validation, Digital Wallet Management, And SHA-256 Hashing",
+      "Created Secure Communication Systems With TLS/SRTP Encryption, Zero-Knowledge Authentication, And Ephemeral Messaging",
     ],
   },
   {
     title: "Full-Stack Developer",
     company: "Web Development Projects",
-    date: "2023 - Still Going / Learning",
+    date: "2023 - Present",
     highlights: ["React + FastAPI", "Three.js 3D", "CMS Admin"],
     bullets: [
-      "Built Pranjal Portfolio - Stunning Full-Stack Application With Immersive Three.js 3D Visualizations, Framer Motion Animations, JWT-Based Admin Panel, FastAPI Backend, And MongoDB Integration",
-      "Developed Hospital Management System With Django 4.2.7, Google Calendar Integration For Appointments, Automated Email Notifications, Role-Based Access Control, And PostgreSQL Database",
-      "Created Django Library Tutorial Platform With 2000+ Lines Of Educational Content Across 28 Chapters, 500+ Python Examples, Interactive Learning Modules, And Real-World Implementations",
-      "Implemented GitTracker Bot - Intelligent Telegram Bot For Real-Time GitHub Monitoring With Webhook Integration, Commit Tracking, Pull Request Updates, And Multi-Repository Support",
+      "Built A Portfolio Site With Three.js 3D Visualizations, Framer Motion Animations, JWT-Based Admin Panel, FastAPI Backend, And MongoDB",
+      "Developed A Hospital Management System With Django, Google Calendar Integration, Email Notifications, And Role-Based Access Control",
+      "Created A Django And Python Educational Platform With 28 Chapters And 500+ Code Examples Covering Full-Stack Development",
+      "Built A Telegram Bot For GitHub Monitoring With Webhook Integration, Commit Tracking, And Pull Request Updates",
     ],
   },
 ];
@@ -153,11 +139,11 @@ const Experience = () => {
             {/* Section Title */}
             <ScrollReveal direction="up">
               <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-12 2xl:mb-16">
-                <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
-                  <span className="section-number text-sm sm:text-base">02.</span>
-                  <span className="hidden xs:inline">Where I Have Worked</span>
-                  <span className="xs:hidden">Experience</span>
-                </h2>
+                  <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
+                    <span className="section-number text-sm sm:text-base">02.</span>
+                    <span className="hidden xs:inline">Where I've Worked</span>
+                    <span className="xs:hidden">Experience</span>
+                  </h2>
                 <div className="flex-1 h-[2px] bg-primary max-w-[80px] sm:max-w-xs" />
               </div>
             </ScrollReveal>

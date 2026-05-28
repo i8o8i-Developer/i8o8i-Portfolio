@@ -50,17 +50,17 @@ const Contact = () => {
 
             {/* Title */}
             <ScrollReveal direction="up" delay={100}>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 2xl:mb-8 text-center">
-                Get In <span className="text-gradient">Touch</span>
-              </h2>
+                  <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 2xl:mb-8 text-center">
+                    Get In <span className="text-gradient">Touch</span>
+                  </h2>
             </ScrollReveal>
 
             {/* Description */}
             <ScrollReveal direction="up" delay={200}>
               <p className="text-muted-foreground text-sm sm:text-base md:text-lg 2xl:text-xl leading-relaxed mb-8 sm:mb-12 2xl:mb-16 text-center max-w-2xl mx-auto">
-                I Am Currently Looking For New Opportunities And Exciting Projects.
-                Whether You Have A Question, Want To Collaborate On A Project, Or Just
-                Want To Say Hi, My Inbox Is Always Open!
+                I'm Currently Looking For New Opportunities And Interesting Projects.
+                Whether You Have A Question, Want To Collaborate, Or Just
+                Want To Say Hi, My Inbox Is Always Open.
               </p>
             </ScrollReveal>
 
@@ -68,10 +68,10 @@ const Contact = () => {
               {/* Contact Form */}
               <ScrollReveal direction="left" delay={300}>
                 <div className="border-2 border-border bg-card p-4 sm:p-6 md:p-8 2xl:p-10 rounded-lg h-full hover:border-primary transition-colors">
-                  <h3 className="text-base sm:text-xl 2xl:text-2xl font-semibold text-foreground mb-4 sm:mb-6 2xl:mb-8 flex items-center gap-2">
-                    <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                    Send a Message
-                  </h3>
+                    <h3 className="text-base sm:text-xl 2xl:text-2xl font-semibold text-foreground mb-4 sm:mb-6 2xl:mb-8 flex items-center gap-2">
+                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                      Send A Message
+                    </h3>
                   <ContactForm />
                 </div>
               </ScrollReveal>
@@ -80,7 +80,7 @@ const Contact = () => {
               <ScrollReveal direction="right" delay={400}>
                 <div className="space-y-4 sm:space-y-6">
                   <h3 className="text-base sm:text-xl 2xl:text-2xl font-semibold text-foreground mb-4 sm:mb-6 2xl:mb-8">
-                    Other Ways to Connect
+                    Other Ways To Connect
                   </h3>
                   <div className="grid grid-cols-2 gap-3 sm:gap-4 2xl:gap-6">
                     {contactMethods.map((method, index) => (

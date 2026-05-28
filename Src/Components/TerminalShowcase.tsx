@@ -32,15 +32,15 @@ const commands = [
   {
     command: "Portfolio --mission",
     output: `
-Mission: Building Secure, Scalable Systems That Solve Real-World Problems.
+Mission: Building Practical, Well-Architected Software That Delivers Real Value.
 
 Current Focus:
-  → Revolutionizing Agriculture With AI (12,000+ Farmers Served)
-  → Advancing Quantum-Resistant Cryptography
-  → Creating Production-Scale Distributed Systems
+  → Backend Development With Python And TypeScript
+  → AI/ML Integration And System Design
+  → Security And Cryptography Applications
 
 Philosophy:
-  "Code Is Poetry Written For Machines To Execute And Humans To Understand."`,
+  "Write Code For Humans First, Machines Second."`,
     delay: 200,
   },
   {
@@ -215,8 +215,8 @@ const TerminalShowcase = () => {
               {/* Initial State */}
               {!isRunning && history.length === 0 && !displayedCommand && (
                 <div className="text-muted-foreground">
-                  <p className="mb-2 text-xs sm:text-sm">Welcome to Anubhav&apos;s Terminal</p>
-                  <p className="text-[10px] sm:text-xs md:text-sm">Click play or scroll to start...</p>
+                  <p className="mb-2 text-xs sm:text-sm">Welcome To My Terminal</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm">Click Play Or Scroll To Start...</p>
                 </div>
               )}
             </div>

@@ -181,13 +181,13 @@ const Footer = () => {
           {/* Credit */}
           <div className="space-y-1 sm:space-y-2">
             <p className="font-mono text-xs sm:text-sm 2xl:text-base text-muted-foreground">
-              Designed & Built By Anubhav Chaurasia aka i8o8i Developer
+              Designed And Built By Anubhav Chaurasia
             </p>
             <p className="font-mono text-[10px] sm:text-xs 2xl:text-sm text-muted-foreground/70">
-              Built With Love & React, TypeScript & Tailwind CSS
+              React, TypeScript, Tailwind CSS
             </p>
             <p className="font-mono text-[10px] sm:text-xs 2xl:text-sm text-muted-foreground/60">
-              © {new Date().getFullYear()} Anubhav Chaurasia. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Anubhav Chaurasia
             </p>
           </div>
         </div>

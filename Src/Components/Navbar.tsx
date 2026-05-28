@@ -231,6 +231,7 @@ const Navbar = () => {
                   <span className="text-primary mr-1" aria-hidden="true">0{index + 1}.</span>
                   {link.name}
                 </a>
+                </a>
               </li>
             ))}
           </ul>
@@ -244,7 +245,7 @@ const Navbar = () => {
             // Toggle Mobile Menu State (body.menu-open Is Managed In The Effect)
             setIsMobileMenuOpen(!isMobileMenuOpen);
           }}
-          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-menu"
         >

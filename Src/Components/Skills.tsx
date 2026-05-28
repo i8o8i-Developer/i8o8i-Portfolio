@@ -25,113 +25,95 @@ const skillCategories: SkillCategory[] = [
     name: "AI & Machine Learning",
     icon: Brain,
     skills: [
-      { name: "Google ADK & Gemini", level: 95 },
-      { name: "Cerebras AI Models", level: 90 },
-      { name: "Groq LLM", level: 90 },
-      { name: "Multi-Agent Systems", level: 95 },
-      { name: "Vector Storage & Embeddings", level: 85 },
-      { name: "A2A Protocol", level: 90 },
-      { name: "LangChain", level: 80 },
+      { name: "Python/ML Libraries", level: 85 },
+      { name: "LLM Integration", level: 80 },
+      { name: "Multi-Agent Systems", level: 75 },
+      { name: "Vector Embeddings", level: 75 },
+      { name: "LangChain", level: 70 },
+      { name: "Prompt Engineering", level: 80 },
     ],
   },
   {
     name: "Backend Development",
     icon: Wrench,
     skills: [
-      { name: "Python", level: 95 },
-      { name: "FastAPI", level: 90 },
-      { name: "Django", level: 90 },
-      { name: "Flask", level: 85 },
-      { name: "Node.js", level: 75 },
-      { name: "C# & .NET 8.0", level: 85 },
+      { name: "Python", level: 90 },
+      { name: "FastAPI", level: 85 },
+      { name: "Django", level: 80 },
+      { name: "Flask", level: 80 },
+      { name: "Node.js", level: 65 },
+      { name: "C#/.NET", level: 70 },
     ],
   },
   {
     name: "Frontend & 3D",
     icon: Wrench,
     skills: [
-      { name: "React 18", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Three.js", level: 85 },
-      { name: "Framer Motion", level: 80 },
-      { name: "Vite", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
+      { name: "React", level: 85 },
+      { name: "TypeScript", level: 80 },
+      { name: "Three.js", level: 75 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "Framer Motion", level: 70 },
+      { name: "Vite", level: 80 },
     ],
   },
   {
     name: "Security & Cryptography",
     icon: Shield,
     skills: [
-      { name: "AES-256-GCM", level: 90 },
-      { name: "RSA-4096", level: 90 },
-      { name: "Post-Quantum Crypto", level: 85 },
-      { name: "SHA-256", level: 90 },
-      { name: "TLS/SRTP", level: 85 },
-      { name: "Zero-Knowledge Auth", level: 80 },
-      { name: "PromptGuard", level: 90 },
+      { name: "AES/RSA Encryption", level: 80 },
+      { name: "Post-Quantum Crypto", level: 70 },
+      { name: "SHA Hashing", level: 85 },
+      { name: "TLS/SSL", level: 75 },
+      { name: "Zero-Knowledge Auth", level: 65 },
+      { name: "Secure Coding", level: 80 },
     ],
   },
   {
     name: "Blockchain & Web3",
     icon: Link,
     skills: [
-      { name: "Custom Blockchain", level: 90 },
-      { name: "Proof-Of-Work", level: 85 },
-      { name: "P2P Protocols", level: 85 },
-      { name: "Merkle Trees", level: 85 },
-      { name: "Smart Contracts", level: 75 },
-      { name: "Decentralized Systems", level: 85 },
+      { name: "Custom Blockchain", level: 75 },
+      { name: "Proof-Of-Work", level: 75 },
+      { name: "P2P Protocols", level: 75 },
+      { name: "Merkle Trees", level: 75 },
+      { name: "Smart Contracts", level: 60 },
+      { name: "Cryptographic Hashing", level: 80 },
     ],
   },
   {
     name: "DevOps & Cloud",
     icon: Cloud,
     skills: [
-      { name: "Docker", level: 90 },
-      { name: "Cloud Run", level: 85 },
-      { name: "Serverless", level: 80 },
-      { name: "Redis Caching", level: 85 },
-      { name: "CI/CD", level: 80 },
-      { name: "Uvicorn", level: 85 },
+      { name: "Docker", level: 80 },
+      { name: "Cloud Services", level: 75 },
+      { name: "Serverless", level: 70 },
+      { name: "Redis", level: 75 },
+      { name: "CI/CD", level: 70 },
+      { name: "Linux Administration", level: 75 },
     ],
   },
   {
     name: "Databases & APIs",
     icon: Database,
     skills: [
-      { name: "PostgreSQL", level: 90 },
-      { name: "MongoDB & Motor", level: 85 },
-      { name: "SQLite", level: 90 },
-      { name: "Vector Databases", level: 85 },
-      { name: "RESTful APIs", level: 95 },
-      { name: "NASA POWER API", level: 80 },
-      { name: "ESA Copernicus", level: 80 },
-    ],
-  },
-  {
-    name: "Soft Skills & Management",
-    icon: Users,
-    skills: [
-      { name: "Team Collaboration", level: 90 },
-      { name: "Time Management", level: 95 },
-      { name: "Problem Solving", level: 95 },
-      { name: "Critical Thinking", level: 90 },
-      { name: "Agile Methodology", level: 85 },
-      { name: "Communication", level: 90 },
-      { name: "Leadership", level: 85 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "MongoDB", level: 80 },
+      { name: "SQLite", level: 85 },
+      { name: "RESTful APIs", level: 90 },
+      { name: "API Design", level: 85 },
     ],
   },
   {
     name: "Tools & Platforms",
     icon: Target,
     skills: [
-      { name: "Git & GitHub", level: 95 },
-      { name: "VS Code", level: 95 },
-      { name: "Postman", level: 90 },
-      { name: "Supabase", level: 85 },
-      { name: "Vercel", level: 85 },
-      { name: "Linux/Ubuntu", level: 85 },
-      { name: "Nginx", level: 80 },
+      { name: "Git & GitHub", level: 90 },
+      { name: "VS Code", level: 90 },
+      { name: "Postman", level: 85 },
+      { name: "Linux/Ubuntu", level: 80 },
+      { name: "Nginx", level: 70 },
+      { name: "Vercel", level: 75 },
     ],
   },
 ];
@@ -151,11 +133,10 @@ const Skills = () => {
             {/* Section Title */}
             <ScrollReveal direction="up">
               <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-12 2xl:mb-16 max-w-5xl mx-auto">
-                <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
-                  <span className="section-number text-sm sm:text-base">04.</span>
-                  <span className="hidden xs:inline">Skills & Technologies</span>
-                  <span className="xs:hidden">Skills</span>
-                </h2>
+                  <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
+                    <span className="section-number text-sm sm:text-base">04.</span>
+                    Skills
+                  </h2>
                 <div className="flex-1 h-[2px] bg-primary max-w-[80px] sm:max-w-xs" />
               </div>
             </ScrollReveal>

@@ -21,55 +21,30 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "agrisense",
-    title: "AgriSense Guardian",
-    description:
-      "India's First Multi-Agent AI System Using Google ADK & A2A Protocol For Agricultural Climate Intelligence. Four Specialized Agents (Orchestrator, Forecast, Verify, Planner) Process 23TB+ Daily Satellite Data, 15+ Weather Models, 6-Layer Soil Profiles In Parallel. Reduced Processing Time By 87% (8.2s → 1.1s) While Serving 12,000+ Farmers Across 15 Indian States. Prevented ₹2.3 Crore In Agricultural Losses Through Real-Time Predictions With 97.3% Accuracy And Blockchain-Backed Data Integrity.",
-    category: "ai",
-    featured: true,
-    technologies: ["Google ADK", "Gemini 2.5 Flash", "FastAPI", "Docker", "Cloud Run", "A2A Protocol", "NASA POWER", "ESA Copernicus"],
-    github: "https://github.com/i8o8i-Developer/AGRI-SENSE_GUARDIAN",
-    metrics: {
-      Users: "12,000+",
-      "Losses Prevented": "₹2.3Cr",
-      "Response Time": "1.2s",
-    },
-  },
-  {
     id: "enigma",
     title: "ENIGMA AI Assistant",
     description:
-      "Sophisticated Personal AI Assistant With Advanced Memory Management (Vector Storage), Multi-Module Architecture (7 Specialized Modules), Enterprise-Grade Function Calling With Automatic Detection, Dynamic AI Parameter Optimization, Enhanced Code Extraction, Multi-Turn Clarification Flows, And AI-Powered Context Awareness With Unlimited Task Detection. Features Production-Grade Error Handling, PromptGuard Security (97.5% Threat Detection), State-Of-The-Art Memory Context Windows, Dynamic Voice Interaction With Pause/Resume, And Auto-Learning User Profiles Through Conversational Intelligence.",
+      "A Personal AI Assistant With 7 Specialized Modules (Knowledge, Mathematics, Programming, Reasoning, Personality, Action, Search) Using Cerebras AI, Groq LLM, And Google Gemini. Features Vector Storage Memory, Multi-Turn Conversation Flows, Code Extraction, Voice Interaction, And Security Filtering.",
     category: "ai",
     featured: true,
     technologies: ["Python", "Cerebras AI", "Groq LLM", "Google Gemini", "Selenium", "Edge-TTS", "Vector DB", "Redis"],
     github: "https://github.com/i8o8i-Developer/ENIGMA",
-    metrics: {
-      Modules: "7 AI",
-      "Security": "97.5%",
-      "Memory": "Advanced",
-    },
   },
   {
     id: "synrix",
     title: "SYNRIX Version Control",
     description:
-      "Revolutionary Git Alternative With Quantum-Resistant Cryptography, Intuitive Command Names, Safe-By-Default Operations, Automatic Reflog For Everything, Simple Undo/Redo Commands, And 70% Space Savings Through SHA-256 + GZIP Compression. Features Complete Operation History Logging, Zero Fear Of Data Loss, One-Command Recovery System, Enhanced Branch Management, And Clean Commit History Tools. Built With C# & .NET 8.0 For Enterprise-Grade Performance And Security.",
+      "A Version Control Tool With Quantum-Resistant Cryptography, Intuitive Commands, Safe-By-Default Operations, And Automatic Operation Logging. Features SHA-256 Hashing With GZIP Compression, Undo/Redo Commands, Custom Diff Algorithm, And A One-Command Recovery System. Built With C# & .NET 8.0.",
     category: "security",
     featured: true,
     technologies: ["C#", ".NET 8.0", "SHA-256", "GZIP", "Custom Diff Algorithm", "Quantum-Safe Crypto"],
     github: "https://github.com/i8o8i-Developer/SYNRIX",
-    metrics: {
-      "Space Savings": "70%",
-      "Recovery": "100%",
-      "Commands": "Simple",
-    },
   },
   {
     id: "pranjal-portfolio",
     title: "Pranjal Portfolio",
     description:
-      "Stunning Full-Stack Portfolio Showcasing Visual Storytelling With Immersive 3D Visualizations Using Three.js, Seamless Framer Motion Animations, And Comprehensive CMS. Features JWT-Based Admin Panel With Drag-And-Drop Upload, Content Management, Message Center, Dashboard Analytics, RESTful FastAPI Backend With MongoDB Integration, SMTP Email Services, And CORS-Enabled API. Specialized Galleries For Photography, Videography, And Video Editing With Real-Time Performance Insights.",
+      "A Full-Stack Portfolio Site With Three.js 3D Visualizations, Framer Motion Animations, And A CMS Admin Panel. Features JWT Authentication, Drag-And-Drop Upload, Content Management, FastAPI Backend With MongoDB, And Specialized Galleries For Photography And Videography.",
     category: "fullstack",
     featured: true,
     technologies: ["React 18", "Three.js", "Framer Motion", "FastAPI", "MongoDB", "Vite", "Axios", "JWT"],
@@ -84,7 +59,7 @@ const projects: Project[] = [
     id: "dst-torrent",
     title: "DST Torrent",
     description:
-      "Decentralized File Sharing System With Military-Grade AES-256-GCM And RSA-4096 Encryption, Blockchain Verification For File Integrity, Quantum-Resistant Cryptographic Protocols, P2P Architecture For Distributed Storage, And Secure Key Exchange Mechanisms. Features End-To-End Encryption, Perfect Forward Secrecy, Metadata Protection, And Tamper-Proof Audit Trails For Enterprise-Level Security.",
+      "A Decentralized File Sharing System With AES-256-GCM And RSA-4096 Encryption, Blockchain Verification For File Integrity, And P2P Architecture. Features End-To-End Encryption, Perfect Forward Secrecy, Metadata Protection, And Tamper-Proof Audit Trails.",
     category: "blockchain",
     featured: false,
     technologies: ["Python", "Flask", "AES-256-GCM", "RSA-4096", "Blockchain", "P2P", "Cryptography"],
@@ -94,7 +69,7 @@ const projects: Project[] = [
     id: "hospital-mgmt",
     title: "Hospital Management System",
     description:
-      "Full-Featured Healthcare Platform With Google Calendar Integration For Appointment Scheduling, Automated Email Notifications For Patients And Staff, Role-Based Access Control For Security, Patient Management Dashboard, Doctor Scheduling System, Medical Records Management, And Prescription Tracking. Built With Django 4.2.7, PostgreSQL Database, Node.js Services, And Serverless Architecture For Scalability.",
+      "A Healthcare Management Platform With Google Calendar Integration For Appointment Scheduling, Automated Email Notifications, Role-Based Access Control, Patient Management Dashboard, Medical Records, And Prescription Tracking. Built With Django And PostgreSQL.",
     category: "fullstack",
     featured: false,
     technologies: ["Django 4.2.7", "PostgreSQL", "Node.js", "Serverless", "Google Calendar API", "SMTP"],
@@ -104,7 +79,7 @@ const projects: Project[] = [
     id: "quantumchat",
     title: "QuantumChat",
     description:
-      "Quantum-Resistant P2P Messaging Platform With Military-Grade End-To-End Encryption, Perfect Forward Secrecy For Message History Protection, Metadata Protection Against Surveillance, Decentralized Architecture For Privacy, Post-Quantum Cryptographic Algorithms, Secure Key Exchange, And Ephemeral Messaging. Features WebSocket-Based Real-Time Communication, Zero-Knowledge Authentication, And Tamper-Proof Message Integrity.",
+      "A P2P Messaging Platform With End-To-End Encryption, Perfect Forward Secrecy, Metadata Protection, And Post-Quantum Cryptographic Algorithms. Features WebSocket-Based Real-Time Communication, Zero-Knowledge Authentication, And Decentralized Architecture.",
     category: "security",
     featured: false,
     technologies: ["Python", "Cryptography", "P2P", "WebSockets", "Post-Quantum Crypto", "Zero-Knowledge"],
@@ -114,7 +89,7 @@ const projects: Project[] = [
     id: "i8o8icoin",
     title: "I8o8iCoin Blockchain",
     description:
-      "Complete Blockchain Implementation From Scratch With Custom Proof-Of-Work Consensus Mechanism, Transaction Validation And Mining System, Digital Wallet Management, SHA-256 Cryptographic Hashing, Block Chain Verification, Merkle Tree Implementation, And RESTful API With Flask. Features Double-Spending Prevention, Block Difficulty Adjustment, Transaction Pool Management, And Network Node Communication.",
+      "A Complete Blockchain Implementation From Scratch With Custom Proof-Of-Work Consensus, Transaction Validation, Digital Wallet Management, And SHA-256 Hashing. Features Merkle Tree Implementation, RESTful API With Flask, Double-Spending Prevention, And Difficulty Adjustment.",
     category: "blockchain",
     featured: false,
     technologies: ["Python", "Blockchain", "SHA-256", "Flask", "Proof-Of-Work", "Merkle Trees", "Cryptography"],
@@ -124,7 +99,7 @@ const projects: Project[] = [
     id: "gittracker-bot",
     title: "GitTracker Bot",
     description:
-      "Intelligent Telegram Bot For Real-Time GitHub Repository Monitoring With Webhook Integration For Instant Notifications, Commit Tracking And Analysis, Pull Request Updates, Issue Tracking, Branch Management Alerts, Code Review Notifications, And Release Announcements. Features Multi-Repository Support, Custom Alert Filtering, Team Collaboration Tools, And Comprehensive Activity Dashboard.",
+      "A Telegram Bot For Real-Time GitHub Repository Monitoring With Webhook Integration, Commit Tracking, Pull Request Updates, Issue Tracking, And Branch Management Alerts. Supports Multiple Repositories, Custom Filtering, And Team Collaboration.",
     category: "automation",
     featured: false,
     technologies: ["Python", "Telegram Bot API", "GitHub Webhooks", "GitHub API", "Async IO", "SQLite"],
@@ -134,7 +109,7 @@ const projects: Project[] = [
     id: "telegram-identity-bot",
     title: "Telegram Identity Bot",
     description:
-      "Lightweight Telegram Bot For Fetching IDs, Chat Info, User Info, And Admin Management. Features Include User/Chat ID Retrieval, Topic ID Detection In Threaded Groups, Member Count Statistics, Admin List Generation, Chat Snapshot Export As JSON, Detailed User Profiles, Bot Latency Testing, And Media File ID Extraction. Built With FastAPI + Python-Telegram-Bot V21, Deployable To Coolify With Webhook Mode, Health Endpoints, Docker Support, And Production-Ready Uvicorn/Gunicorn Integration.",
+      "A Lightweight Telegram Bot For Fetching User And Chat Info, Admin Management, Member Statistics, And Chat Snapshots. Built With FastAPI And Python-Telegram-Bot, Deployable With Docker And Webhook Mode.",
     category: "automation",
     featured: false,
     technologies: ["Python", "FastAPI", "python-telegram-bot v21", "Uvicorn", "Docker", "Coolify", "Webhooks"],
@@ -145,7 +120,7 @@ const projects: Project[] = [
     id: "django-python-courses",
     title: "Django & Python Programming Courses",
     description:
-      "Comprehensive Educational Repository With 2000+ Lines Of Django Tutorial Content Across 28 Detailed Chapters Plus Complete Python Programming Course. Covers Django Models, Views, Templates, Forms, Authentication, REST APIs, Database Design, ORM, Testing, Deployment, Python Fundamentals, OOP, Data Structures, Algorithms, File I/O, Exception Handling, And Best Practices. Features 500+ Code Examples, Interactive Exercises, And Real-World Project Implementations For Complete Full-Stack Learning.",
+      "An Educational Repository With Django Tutorial Content Across 28 Chapters Covering Models, Views, Templates, Authentication, REST APIs, And Deployment, Plus A Python Programming Course With Fundamentals, OOP, Data Structures, And Algorithms.",
     category: "fullstack",
     featured: false,
     technologies: ["Django", "Python", "PostgreSQL", "REST APIs", "OOP", "Data Structures", "Algorithms"],
@@ -155,7 +130,7 @@ const projects: Project[] = [
     id: "safe-windows-repair",
     title: "Safe Windows Repair",
     description:
-      "Professional Windows System Repair Toolkit With PowerShell Scripts For Comprehensive System Maintenance. Features Service Management (Windows Update, BITS, DoSvc), Automatic Timestamped Backups, System Cleanup (SoftwareDistribution Cache, Temp Folders), DISM RestoreHealth, SFC Scannow, Network Stack Reset (Winsock, TCP/IP, DNS Flush), Detailed Logging, And Administrator Privilege Checks. Includes FIX_UPDATE.BAT For Aggressive Update Reset And Cleanup Utility For Backup Management.",
+      "A Windows System Repair Toolkit With PowerShell Scripts For System Maintenance, Including Service Management, Automatic Backups, System Cleanup, DISM Restore Operations, SFC Scans, Network Stack Reset, And Detailed Logging.",
     category: "devops",
     featured: false,
     technologies: ["PowerShell", "Batch", "Windows API", "DISM", "SFC", "Network Admin", "System Services"],
@@ -165,7 +140,7 @@ const projects: Project[] = [
     id: "wakatime-stats",
     title: "I8o8i WakaTime Stats",
     description:
-      "Customizable GitHub Action For Displaying Real-Time WakaTime Coding Statistics In Profile README. Tracks Programming Languages, Code Time, Operating Systems, Editors, Projects, Timezone, Daily/Weekly Activity Patterns, And Lines Of Code Written. Features Multi-Language Support, Customizable Progress Bars, Profile Views Counter, Commit Metrics, Repository Language Distribution, And Automated Updates Via Cron. Built With Python For Seamless Integration With GitHub Workflows.",
+      "A Customizable GitHub Action That Displays WakaTime Coding Statistics In A Profile README. Tracks Programming Languages, Coding Time, Operating Systems, Editors, And Activity Patterns With Automated Updates Via Cron.",
     category: "automation",
     featured: false,
     technologies: ["Python", "GitHub Actions", "WakaTime API", "GitHub API", "YAML", "Markdown", "Automation"],
@@ -255,11 +230,11 @@ const Projects = () => {
             {/* Section Title */}
             <ScrollReveal direction="up">
               <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-10 2xl:mb-12 max-w-5xl mx-auto">
-                <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
-                  <span className="section-number text-sm sm:text-base">03.</span>
-                  <span className="hidden xs:inline">Some Things I Have Built</span>
-                  <span className="xs:hidden">Projects</span>
-                </h2>
+                  <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
+                    <span className="section-number text-sm sm:text-base">03.</span>
+                    <span className="hidden xs:inline">Some Things I've Built</span>
+                    <span className="xs:hidden">Projects</span>
+                  </h2>
                 <div className="flex-1 h-[2px] bg-primary max-w-[80px] sm:max-w-xs" />
               </div>
             </ScrollReveal>
@@ -370,7 +345,7 @@ const Projects = () => {
               <>
                 <ScrollReveal direction="up">
                   <h3 className="text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold text-foreground text-center mb-6 sm:mb-8 2xl:mb-10">
-                    Other Noteworthy Projects
+                    More projects
                   </h3>
                 </ScrollReveal>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 2xl:gap-6">

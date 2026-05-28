@@ -59,12 +59,12 @@ const Hero = () => {
             className="text-muted-foreground text-sm sm:text-base md:text-base lg:text-base 2xl:text-xl max-w-2xl mb-4 sm:mb-6 2xl:mb-10 leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: "1100ms" }}
           >
-            <span className="text-primary font-bold">Aspiring Machine Learning Engineer</span> And Current{" "}
-            <span className="text-primary font-medium">Backend Developer</span> Specializing In{" "}
-            <span className="text-primary font-medium">AI-Powered Distributed Systems</span>,{" "}
-            <span className="text-primary font-medium">Quantum-Resistant Cryptography</span>, And{" "}
-            <span className="text-primary font-medium">Production-Scale Applications</span>.
-            Passionate About Building Secure, Scalable Systems That Solve Real-World Problems Through Innovation And Performance-Driven Development.
+            <span className="text-primary font-bold">Backend Developer</span> and{" "}
+            <span className="text-primary font-medium">Machine Learning Engineer</span> with experience in{" "}
+            <span className="text-primary font-medium">Distributed Systems</span>,{" "}
+            <span className="text-primary font-medium">Cryptography</span>, and{" "}
+            <span className="text-primary font-medium">Full-Stack Development</span>.
+            I Focus On Building Secure, Scalable Systems That Solve Real-World Problems.
           </p>
 
           {/* CTA Buttons */}
@@ -113,16 +113,16 @@ const Hero = () => {
               label="Years Of Experience" 
             />
             <StatCard 
-              value={<><AnimatedCounter end={40} duration={2500} suffix="+" /></>} 
-              label="Technologies Mastered" 
+              value={<><AnimatedCounter end={30} duration={2500} suffix="+" /></>} 
+              label="Technologies Used" 
             />
             <StatCard 
               value={<><AnimatedCounter end={15} duration={1800} suffix="+" /></>} 
               label="Projects Completed" 
             />
             <StatCard 
-              value={<><AnimatedCounter end={10} duration={2000} suffix=" Certs" /></>} 
-              label="Professional Certifications" 
+              value={<><AnimatedCounter end={8} duration={2000} suffix=" Certs" /></>} 
+              label="Certifications" 
             />
           </div>
         </div>

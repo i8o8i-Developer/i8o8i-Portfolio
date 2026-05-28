@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
 const bootSequence = [
-  { text: "> Initializing System...", delay: 0 },
-  { text: "> Loading Core Modules...", delay: 400 },
-  { text: "> Establishing Secure Connection...", delay: 800 },
-  { text: "> Decrypting Portfolio Data...", delay: 1200 },
-  { text: "> Compiling Experience Matrix...", delay: 1600 },
-  { text: "> Rendering UI Components...", delay: 2000 },
-  { text: "> System Ready.", delay: 2400 },
+  { text: "> Initializing...", delay: 0 },
+  { text: "> Loading Modules...", delay: 400 },
+  { text: "> Establishing Connection...", delay: 800 },
+  { text: "> Loading Portfolio...", delay: 1200 },
+  { text: "> Almost Ready...", delay: 1600 },
+  { text: "> Rendering...", delay: 2000 },
+  { text: "> Ready.", delay: 2400 },
   { text: "", delay: 2800 },
 ];
 
@@ -98,7 +98,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         {/* Progress Bar */}
         <div className="mt-4 sm:mt-6">
           <div className="flex justify-between text-[10px] sm:text-xs font-mono text-muted-foreground mb-2">
-            <span>Loading Portfolio</span>
+            <span>Status</span>
             <span>{Math.round(progress)}%</span>
           </div>
           <div className="h-1 bg-secondary/50 rounded-full overflow-hidden">

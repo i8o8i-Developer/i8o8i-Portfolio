@@ -11,10 +11,10 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'i8o8i | Anubhav Chaurasia - Backend Developer, AI/ML Engineer & Cybersecurity Expert',
-  description = 'i8o8i (Anubhav Chaurasia) - Expert Backend Developer & AI/ML Engineer specializing in AI-powered distributed systems, quantum-resistant cryptography, blockchain, and production-scale applications. Creator of AgriSense Guardian serving 12,000+ farmers.',
-  keywords = 'i8o8i, I8O8I, Anubhav Chaurasia, Backend Developer, Full Stack Developer, AI Engineer, Machine Learning Engineer, Python Developer, Django Developer, FastAPI, React Developer, TypeScript, AI, Machine Learning, Deep Learning, Blockchain Developer, Cryptography Expert, Quantum-Resistant Cryptography, Cybersecurity, Web3, Distributed Systems, Cloud Computing, DevOps, Software Engineer, Portfolio',
-  image = 'https://i8o8i.vercel.app/Images/Favicon.jpg',
+  title = 'i8o8i | Anubhav Chaurasia - Software Engineer',
+  description = 'i8o8i (Anubhav Chaurasia) - Backend Developer & AI/ML Engineer Specializing In AI-Powered Distributed Systems, Quantum-Resistant Cryptography, Blockchain, And Production-Scale Applications.',
+  keywords = 'i8o8i, I8O8I, Anubhav Chaurasia, Backend Developer, Full Stack Developer, AI Engineer, Machine Learning Engineer, Python Developer, Django Developer, FastAPI, React Developer, TypeScript, AI, Machine Learning, Deep Learning, Blockchain Developer, Cryptography, Quantum-Resistant Cryptography, Cybersecurity, Web3, Distributed Systems, Cloud Computing, DevOps, Software Engineer, Portfolio',
+  image = 'https://i8o8i.vercel.app/Favicon.jpg',
   url = 'https://i8o8i.vercel.app',
   type = 'website',
   author = 'Anubhav Chaurasia, i8o8i, I8O8I',

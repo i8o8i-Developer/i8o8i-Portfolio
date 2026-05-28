@@ -14,14 +14,6 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    id: "1",
-    name: "Dr. Rajesh Kumar",
-    role: "Agricultural Scientist",
-    company: "ICAR Research Institute",
-    content: "Anubhav's AgriSense Guardian Has Revolutionized How We Approach Climate Intelligence In Agriculture. The Multi-Agent AI System He Built Has Helped Thousands Of Farmers Make Better Decisions. His Technical Expertise Combined With His Understanding Of Real-World Problems Is Remarkable.",
-    rating: 5,
-  },
-  {
     id: "2",
     name: "Priya Sharma",
     role: "CTO",

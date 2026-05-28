@@ -35,11 +35,11 @@ Distributed Systems, Cloud Computing, DevOps, Full Stack Developer
 - Cybersecurity & Penetration Testing
 
 /* PROJECTS HIGHLIGHT */
-- AgriSense Guardian (Serving 12,000+ farmers)
 - AI-Powered Systems
 - Quantum-Resistant Cryptography Solutions
 - Full-Stack Web Applications
 - Blockchain & DeFi Projects
+- Automation & Dev Tools
 
 /* LAST UPDATE */
 Date: 2026-01-27

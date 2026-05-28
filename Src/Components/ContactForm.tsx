@@ -41,7 +41,7 @@ const ContactForm = () => {
 
       toast({
         title: "Message Sent!",
-        description: "Thank You For Reaching Out. I Will Get Back To You Soon.",
+        description: "Thank You For Reaching Out. I'll Get Back To You Soon.",
       });
 
       setFormData({ name: "", email: "", message: "" });

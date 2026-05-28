@@ -231,7 +231,6 @@ const Navbar = () => {
                   <span className="text-primary mr-1" aria-hidden="true">0{index + 1}.</span>
                   {link.name}
                 </a>
-                </a>
               </li>
             ))}
           </ul>
